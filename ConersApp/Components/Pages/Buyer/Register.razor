@@ -1,0 +1,144 @@
+﻿@page "/register"
+@using BackendClassLibrary.Dto;
+@using BackendClassLibrary.Helper;
+@using BackendClassLibrary.Models;
+@using System.Text;
+@using ConersApp.State;
+
+
+@inject ISnackbar Snackbar;
+
+
+<MudText Typo="Typo.h3" Align="Align.Center">
+    <b>Create An Account</b>
+</MudText>
+<MudText Typo="Typo.body2" Align="Align.Center">
+    Only takes a few minutes.
+</MudText>
+<MudText Typo="Typo.h5" Align="Align.Center">
+    OR
+</MudText>
+<MudPaper Elevation="5">
+    <MudButton Href="/"
+               Variant="Variant.Outlined"
+               Color="Color.Primary"
+               FullWidth="true">
+        Become a seller
+    </MudButton>
+</MudPaper>
+
+
+<EditForm Model="@registerModel" OnValidSubmit="RegisterAsync">
+    <DataAnnotationsValidator />
+    <MudGrid Style="margin-top: 50px">
+        <MudItem xs="12" sm="7">
+            <Animate Auto Animation="Animations.FadeRight" DelayMilliseconds="100" >
+            <MudCard Elevation="5">
+                <MudCardContent>
+                    <MudTextField Label="First name"
+                                  @bind-Value="registerModel.FirstName" Variant="Variant.Outlined" For="@(() => registerModel.FirstName)" />
+                    <MudTextField Label="Last name" Class="mt-3"
+                                  @bind-Value="registerModel.LastName" Variant="Variant.Outlined" For="@(() => registerModel.LastName)" />
+                    <MudTextField Label="Email" Class="mt-3"
+                                  @bind-Value="registerModel.Email" Variant="Variant.Outlined" For="@(() => registerModel.Email)" />
+                    <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
+                                  @bind-Value="registerModel.Password" Variant="Variant.Outlined" For="@(() => registerModel.Password)" InputType="InputType.Password" />
+                    <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
+                                  @bind-Value="registerModel.ConfirmPassword" Variant="Variant.Outlined" For="@(() => registerModel.ConfirmPassword)" InputType="InputType.Password" />
+                </MudCardContent>
+                <MudCardActions>
+                    @if (!isBusy)
+                    {
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Register</MudButton>
+                    }
+                    else
+                    {
+                        <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Disabled="true" Class="ml-auto">
+                            <MudProgressCircular Color="Color.Default" Size="Size.Small" Style="margin-right: 8px" Indeterminate="true" />
+                            Register
+                        </MudButton>
+                    }
+                </MudCardActions>
+            </MudCard>
+            </Animate>
+        </MudItem>
+        <MudItem xs="12" sm="5">
+            <Animate Auto Animation="Animations.FadeLeft" DelayMilliseconds="100" >
+            <MudPaper Elevation="5" Class="pa-4 mud-height-full">
+                <MudText>Already have an account?</MudText>
+                <MudButton Href="/login" Variant="Variant.Filled" Color="Color.Secondary" Class="mt-3" FullWidth="true" StartIcon="@Icons.Material.Filled.Login">
+                    Log in
+                </MudButton>
+                    <MudDivider Class="my-2" />
+
+                    <MudText Align="Align.Center">OR</MudText>
+                <MudButton Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true" >
+                    <MudIcon Icon="@Icons.Custom.Brands.Google" Class="mr-2" /> Continue with Google
+                </MudButton>
+                <MudButton Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true" >
+                    <MudIcon Icon="@Icons.Custom.Brands.Microsoft" Class="mr-2" /> Continue with Microsoft
+                </MudButton>
+
+            </MudPaper>
+            </Animate>
+        </MudItem>
+
+
+    </MudGrid>
+</EditForm>
+
+
+
+@code {
+    [CascadingParameter(Name = "AuthenticationState")]
+    public AuthenticationState AuthenticationState { get; set; }
+
+    private RegisterModel registerModel { get; set; } = new();
+    private string _baseUrl = "https://localhost:7259/";
+    private string? errorMessage;
+    private bool isBusy = false;
+
+    private async Task RegisterAsync()
+    {
+        try
+        {
+            using (var client = new HttpClient())
+            {
+                var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(registerModel);
+                var response = await client.PostAsync($"{_baseUrl}api/Account/register", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var contentStr = await response.Content.ReadAsStringAsync();
+                    var authResponse = JsonConverter.Deserialize<AuthResponseDto>(contentStr);
+
+                    var serialized = JsonConverter.Serialize(authResponse);
+                    await SecureStorage.SetAsync(AuthenticationState.AuthStoreKey, serialized);
+
+                    AuthenticationState.LoadState(authResponse);
+                }
+                else
+                {
+                    errorMessage = await response.Content.ReadAsStringAsync();
+
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add(errorMessage, Severity.Error);
+
+                    //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
+
+            //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+        }
+
+    }
+}

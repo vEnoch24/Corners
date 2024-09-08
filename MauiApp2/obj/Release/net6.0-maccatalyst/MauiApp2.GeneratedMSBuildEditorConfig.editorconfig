@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MauiApp2
+build_property.RootNamespace = MauiApp2
+build_property.ProjectDir = C:\Users\Enoch\source\repos\MauiApp2\MauiApp2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Enoch\source\repos\MauiApp2\MauiApp2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Main.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Buyer/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Buyer/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnV5ZXJcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Map.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Seller/SellerLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFNlbGxlckxvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Seller/SellerRegister.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXFNlbGxlclJlZ2lzdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/UserTypeSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclR5cGVTZWxlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Pages/Verification.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyaWZpY2F0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Shared/StartupLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0YXJ0dXBMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-gnkx2l7091
+
+[C:/Users/Enoch/source/repos/MauiApp2/MauiApp2/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1bmrwrw2t7

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "wIzS+6EAyvCzeuXc8CVRiop1b+JTXOsVvNN079TanAU=",
+  "Source": "RazorClassLibrary1",
+  "BasePath": "_content/RazorClassLibrary1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RazorClassLibrary1\\wwwroot",
+      "Source": "RazorClassLibrary1",
+      "ContentRoot": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\wwwroot\\",
+      "BasePath": "_content/RazorClassLibrary1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\wwwroot\\background.png",
+      "SourceId": "RazorClassLibrary1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\wwwroot\\",
+      "BasePath": "_content/RazorClassLibrary1",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "RazorClassLibrary1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\wwwroot\\",
+      "BasePath": "_content/RazorClassLibrary1",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}

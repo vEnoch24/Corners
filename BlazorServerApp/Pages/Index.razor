@@ -1,0 +1,15 @@
+﻿@page "/"
+@using RazorClassLibrary1
+@inject IJSRuntime JS;
+
+<PageTitle>Index</PageTitle>
+
+<CustomerComponent ShowAlert="ShowAlert"/>
+
+@code {
+    private async Task ShowAlert()
+    {
+
+        await JS.InvokeVoidAsync("alert", "Please Enter both Name and Email");
+    }
+}

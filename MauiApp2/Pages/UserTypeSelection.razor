@@ -1,0 +1,46 @@
+﻿@page "/"
+
+
+<MudContainer  Class="mt-8">
+    <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Continue as</MudText>
+    <MudGrid Style="margin-top: 200px" Spacing="6" Justify="Justify.Center" Class="mt-10">
+        
+        <MudItem xs="12" sm="6" md="4">
+            <Animate Auto Animation="Animations.FadeRight" DelayMilliseconds="100">
+                <MudPaper Elevation="22">
+                    <MudButton Href="/seller-login" Style="padding: 100px; font-size:2rem" Variant="Variant.Outlined" Color="Color.Secondary" FullWidth="true">
+                        <MudIcon Icon="@Icons.Material.Filled.Store" Class="mr-2" /> Seller
+                    </MudButton>
+                </MudPaper>
+            </Animate>
+        </MudItem>
+        <MudItem xs="12" sm="6" md="4">
+            <Animate Auto Animation="Animations.FadeLeft" DelayMilliseconds="100">
+                <MudPaper Elevation="22">
+                    <MudButton Href="/login" Style="padding: 100px; font-size:2rem" Variant="Variant.Outlined" Color="Color.Primary" FullWidth="true">
+                        <MudIcon Icon="@Icons.Material.Filled.ShoppingCart" Class="mr-2" /> Buyer
+                    </MudButton>
+                </MudPaper>
+            </Animate>             
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+<style>
+    .hover-filled {
+        background-color: var(--mud-palette-secondary); /* Use MudBlazor theme color */
+        color: black;
+    }
+
+        .hover-filled:hover {
+            background-color: var(--mud-palette-secondary);
+            color: white;
+        }
+</style>
+
+@code {
+    private Dictionary<string, object> ButtonStyles = new()
+    {
+        { "class", "hover-filled" }
+    };
+}

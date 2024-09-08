@@ -1,0 +1,420 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\MauiApp2\\MauiApp2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj",
+        "projectName": "BackendClassLibrary",
+        "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj",
+        "packagesPath": "C:\\Users\\Enoch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Enoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.33, )"
+            },
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\MauiApp2\\MauiApp2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\MauiApp2\\MauiApp2.csproj",
+        "projectName": "MauiApp2",
+        "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\MauiApp2\\MauiApp2.csproj",
+        "packagesPath": "C:\\Users\\Enoch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\MauiApp2\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Enoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-android",
+          "net6.0-ios",
+          "net6.0-maccatalyst",
+          "net6.0-windows10.0.19041.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-android21.0": {
+            "targetAlias": "net6.0-android",
+            "projectReferences": {
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj"
+              },
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
+              }
+            }
+          },
+          "net6.0-ios1.0": {
+            "targetAlias": "net6.0-ios",
+            "projectReferences": {
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj"
+              },
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
+              }
+            }
+          },
+          "net6.0-maccatalyst1.0": {
+            "targetAlias": "net6.0-maccatalyst",
+            "projectReferences": {
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj"
+              },
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
+              }
+            }
+          },
+          "net6.0-windows10.0.19041": {
+            "targetAlias": "net6.0-windows10.0.19041.0",
+            "projectReferences": {
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj"
+              },
+              "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+                "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0-android21.0": {
+          "targetAlias": "net6.0-android",
+          "dependencies": {
+            "Blazorise.Animate": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[6.0.553, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0-ios1.0": {
+          "targetAlias": "net6.0-ios",
+          "dependencies": {
+            "Blazorise.Animate": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[6.0.553, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0-maccatalyst1.0": {
+          "targetAlias": "net6.0-maccatalyst",
+          "dependencies": {
+            "Blazorise.Animate": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[6.0.553, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        },
+        "net6.0-windows10.0.19041": {
+          "targetAlias": "net6.0-windows10.0.19041.0",
+          "dependencies": {
+            "Blazorise.Animate": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebView.Maui": {
+              "target": "Package",
+              "version": "[6.0.553, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.21.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.19041.34, 10.0.19041.34]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
+        "projectName": "RazorClassLibrary1",
+        "projectPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\RazorClassLibrary1.csproj",
+        "packagesPath": "C:\\Users\\Enoch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Enoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

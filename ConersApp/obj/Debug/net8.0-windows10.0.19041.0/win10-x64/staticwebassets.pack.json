@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\ConersApp.styles.css",
+      "PackagePath": "staticwebassets\\ConersApp.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\google-map.html",
+      "PackagePath": "staticwebassets\\google-map.html"
+    },
+    {
+      "Id": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.ConersApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.ConersApp.props",
+      "PackagePath": "build\\ConersApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.ConersApp.props",
+      "PackagePath": "buildMultiTargeting\\ConersApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.ConersApp.props",
+      "PackagePath": "buildTransitive\\ConersApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
