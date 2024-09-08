@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConersApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6a8fe7ea1834358c3c13ea93c4212ab403f44f0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+8926de6b2e5f8b19e5b3973168b0559f931f3e90")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConersApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConersApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
