@@ -1,6 +1,7 @@
 ﻿using Blazorise;
 using Microsoft.Extensions.Logging;
 using MudBlazor.Services;
+using Syncfusion.Blazor;
 
 namespace ConersApp
 {
@@ -23,7 +24,12 @@ namespace ConersApp
     		builder.Logging.AddDebug();
 #endif
 
-			builder.Services.AddMudServices(config =>
+            builder.Services.AddSyncfusionBlazor();
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(
+                builder.Configuration.GetSection("SyncLicense:ApiKey").Value
+            );
+
+            builder.Services.AddMudServices(config =>
 			{
 				config.PopoverOptions.ThrowOnDuplicateProvider = false;
 			});
@@ -33,7 +39,9 @@ namespace ConersApp
 				options.Immediate = true;
 			});
 
-			return builder.Build();
+            
+
+            return builder.Build();
         }
     }
 }

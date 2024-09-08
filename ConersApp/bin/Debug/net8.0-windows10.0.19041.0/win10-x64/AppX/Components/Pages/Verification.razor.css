@@ -1,0 +1,30 @@
+﻿body {
+}
+
+/* Default style for larger screens */
+.otp-input-responsive {
+    width: 30%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 1024px) {
+    .otp-input-responsive {
+        width: 60%;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .otp-input-responsive {
+        width: 80%;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .otp-input-responsive {
+        width: 98%;
+    }
+}

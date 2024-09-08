@@ -160,20 +160,15 @@
   {
     "ContainingType": "BackendApi.Controllers.AccountController",
     "Method": "Verify",
-    "RelativePath": "api/Account/verify",
-    "HttpMethod": "GET",
+    "RelativePath": "api/Account/verify-otp",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "token",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "BackendApi.RequestPayload.OtpVerificationRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

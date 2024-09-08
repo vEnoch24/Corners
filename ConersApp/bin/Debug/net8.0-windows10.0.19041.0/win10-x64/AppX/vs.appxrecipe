@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-08T12:24:07.135</Modified>
+      <Modified>2024-09-08T22:51:30.496</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-06T09:26:13.668</Modified>
+      <Modified>2024-09-08T22:04:35.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.runtimeconfig.json">
       <PackagePath>ConersApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-06T09:26:13.414</Modified>
+      <Modified>2024-09-08T22:51:29.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.dll">
       <PackagePath>ConersApp.dll</PackagePath>
-      <Modified>2024-09-08T12:24:05.293</Modified>
+      <Modified>2024-09-08T22:51:28.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ConersApp.exe</PackagePath>
-      <Modified>2024-09-08T12:24:05.357</Modified>
+      <Modified>2024-09-08T22:51:28.340</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -75,7 +75,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2024-09-05T22:16:05.679</Modified>
+      <Modified>2024-09-08T17:50:02.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\wwwroot\background.png">
       <PackagePath>wwwroot\_content\RazorClassLibrary1\background.png</PackagePath>
@@ -315,7 +315,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.deps.json">
       <PackagePath>ConersApp.deps.json</PackagePath>
-      <Modified>2024-09-06T09:26:13.246</Modified>
+      <Modified>2024-09-08T22:51:29.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -817,6 +817,42 @@
       <PackagePath>Newtonsoft.Json.Bson.dll</PackagePath>
       <Modified>2017-03-22T11:01:20.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.buttons\26.2.13\lib\net8.0\Syncfusion.Blazor.Buttons.dll">
+      <PackagePath>Syncfusion.Blazor.Buttons.dll</PackagePath>
+      <Modified>2024-09-04T16:43:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\lib\net8.0\Syncfusion.Blazor.Core.dll">
+      <PackagePath>Syncfusion.Blazor.Core.dll</PackagePath>
+      <Modified>2024-09-04T16:42:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.data\26.2.13\lib\net8.0\Syncfusion.Blazor.Data.dll">
+      <PackagePath>Syncfusion.Blazor.Data.dll</PackagePath>
+      <Modified>2024-09-04T16:42:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\lib\net8.0\Syncfusion.Blazor.Inputs.dll">
+      <PackagePath>Syncfusion.Blazor.Inputs.dll</PackagePath>
+      <Modified>2024-09-04T16:44:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.popups\26.2.13\lib\net8.0\Syncfusion.Blazor.Popups.dll">
+      <PackagePath>Syncfusion.Blazor.Popups.dll</PackagePath>
+      <Modified>2024-09-04T16:44:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.spinner\26.2.13\lib\net8.0\Syncfusion.Blazor.Spinner.dll">
+      <PackagePath>Syncfusion.Blazor.Spinner.dll</PackagePath>
+      <Modified>2024-09-04T16:43:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.splitbuttons\26.2.13\lib\net8.0\Syncfusion.Blazor.SplitButtons.dll">
+      <PackagePath>Syncfusion.Blazor.SplitButtons.dll</PackagePath>
+      <Modified>2024-09-04T16:44:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\lib\net8.0\Syncfusion.Blazor.Themes.dll">
+      <PackagePath>Syncfusion.Blazor.Themes.dll</PackagePath>
+      <Modified>2024-09-04T16:41:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.licensing\26.2.13\lib\net8.0\Syncfusion.Licensing.dll">
+      <PackagePath>Syncfusion.Licensing.dll</PackagePath>
+      <Modified>2024-09-04T14:18:54.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\system.configuration.configurationmanager\4.7.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
       <PackagePath>System.Configuration.ConfigurationManager.dll</PackagePath>
       <Modified>2019-11-15T08:37:04.000</Modified>
@@ -1007,7 +1043,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\bin\Debug\net6.0\BackendClassLibrary.dll">
       <PackagePath>BackendClassLibrary.dll</PackagePath>
-      <Modified>2024-09-05T21:30:23.613</Modified>
+      <Modified>2024-09-08T20:05:45.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\bin\Debug\net6.0\RazorClassLibrary1.dll">
       <PackagePath>RazorClassLibrary1.dll</PackagePath>
@@ -1193,13 +1229,201 @@
       <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.js</PackagePath>
       <Modified>2024-09-02T16:52:42.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.buttons\26.2.13\staticwebassets\scripts\sf-floating-action-button.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Buttons\scripts\sf-floating-action-button.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.buttons\26.2.13\staticwebassets\scripts\sf-speeddial.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Buttons\scripts\sf-speeddial.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\staticwebassets\scripts\popup.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\popup.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\staticwebassets\scripts\popupsbase.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\popupsbase.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\staticwebassets\scripts\sf-svg-export.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\sf-svg-export.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\staticwebassets\scripts\svgbase.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\svgbase.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\staticwebassets\scripts\syncfusion-blazor.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.core\26.2.13\staticwebassets\scripts\syncfusion-blazor-base.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Core\scripts\syncfusion-blazor-base.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.data\26.2.13\staticwebassets\scripts\data.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Data\scripts\data.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-colorpicker.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-colorpicker.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-maskedtextbox.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-maskedtextbox.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-numerictextbox.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-numerictextbox.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-otp-input.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-otp-input.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-rating.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-rating.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-signature.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-signature.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-slider.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-slider.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-textarea.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-textarea.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-textbox.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-textbox.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.inputs\26.2.13\staticwebassets\scripts\sf-uploader.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Inputs\scripts\sf-uploader.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.popups\26.2.13\staticwebassets\scripts\sf-dialog.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Popups\scripts\sf-dialog.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.popups\26.2.13\staticwebassets\scripts\sf-tooltip.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Popups\scripts\sf-tooltip.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.spinner\26.2.13\staticwebassets\scripts\sf-spinner.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Spinner\scripts\sf-spinner.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.spinner\26.2.13\staticwebassets\scripts\spinner.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Spinner\scripts\spinner.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.splitbuttons\26.2.13\staticwebassets\scripts\sf-drop-down-button.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.SplitButtons\scripts\sf-drop-down-button.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.splitbuttons\26.2.13\staticwebassets\scripts\splitbuttonsbase.min.js">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.SplitButtons\scripts\splitbuttonsbase.min.js</PackagePath>
+      <Modified>2024-09-04T16:42:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\bootstrap.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\bootstrap4.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap4.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\bootstrap5.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap5.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\bootstrap5-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap5-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\bootstrap-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\bootstrap-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\customized\material.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\customized\material.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\customized\material-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\customized\material-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\customized\tailwind.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\customized\tailwind.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\customized\tailwind-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\customized\tailwind-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\fabric.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fabric.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\fabric-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fabric-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\fluent.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fluent.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\fluent2.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fluent2.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\fluent2-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fluent2-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\fluent-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\fluent-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\highcontrast.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\highcontrast.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\material.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\material3.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material3.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\material3-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material3-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\material-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\material-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\tailwind.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\tailwind.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.themes\26.2.13\staticwebassets\tailwind-dark.css">
+      <PackagePath>wwwroot\_content\Syncfusion.Blazor.Themes\tailwind-dark.css</PackagePath>
+      <Modified>2024-09-04T16:41:36.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\ConersApp.styles.css">
       <PackagePath>wwwroot\ConersApp.styles.css</PackagePath>
-      <Modified>2024-09-05T21:40:24.467</Modified>
+      <Modified>2024-09-08T22:27:49.019</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\ConersApp.bundle.scp.css">
       <PackagePath>wwwroot\ConersApp.bundle.scp.css</PackagePath>
-      <Modified>2024-09-05T21:40:24.469</Modified>
+      <Modified>2024-09-08T22:27:49.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>
@@ -1208,6 +1432,10 @@
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
       <Modified>2024-09-05T21:39:36.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Components\Pages\Verification.razor.css">
+      <PackagePath>Components\Pages\Verification.razor.css</PackagePath>
+      <Modified>2024-09-08T22:27:48.328</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

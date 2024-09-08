@@ -178,3 +178,33 @@ main[b-8h8o7zbg3c] {
         overflow-y: auto;
     }
 }
+/* /Components/Pages/Verification.razor.rz.scp.css */
+body[b-o51tba5a6m] {
+}
+
+/* Default style for larger screens */
+.otp-input-responsive[b-o51tba5a6m] {
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 1024px) {
+    .otp-input-responsive[b-o51tba5a6m] {
+        width: 60%;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+    .otp-input-responsive[b-o51tba5a6m] {
+        width: 80%;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .otp-input-responsive[b-o51tba5a6m] {
+        width: 98%;
+    }
+}

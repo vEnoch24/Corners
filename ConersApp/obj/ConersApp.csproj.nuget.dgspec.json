@@ -230,6 +230,14 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[7.7.0, )"
+            },
+            "Syncfusion.Blazor.Inputs": {
+              "target": "Package",
+              "version": "[26.2.13, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[26.2.13, )"
             }
           },
           "imports": [
@@ -285,6 +293,14 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[7.7.0, )"
+            },
+            "Syncfusion.Blazor.Inputs": {
+              "target": "Package",
+              "version": "[26.2.13, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[26.2.13, )"
             }
           },
           "imports": [
@@ -340,6 +356,14 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[7.7.0, )"
+            },
+            "Syncfusion.Blazor.Inputs": {
+              "target": "Package",
+              "version": "[26.2.13, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[26.2.13, )"
             }
           },
           "imports": [
@@ -390,6 +414,14 @@
             "MudBlazor": {
               "target": "Package",
               "version": "[7.7.0, )"
+            },
+            "Syncfusion.Blazor.Inputs": {
+              "target": "Package",
+              "version": "[26.2.13, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[26.2.13, )"
             }
           },
           "imports": [

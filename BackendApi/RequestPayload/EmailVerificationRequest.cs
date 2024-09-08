@@ -3,6 +3,6 @@
     public class EmailVerificationRequest
     {
         public string userId { get; set; }
-        public string token { get; set; }
+        public string Email { get; set; }
     }
 }

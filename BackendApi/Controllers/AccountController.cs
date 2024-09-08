@@ -14,6 +14,7 @@ using System.Security.Cryptography;
 using Microsoft.AspNetCore.Authorization;
 using BackendApi.Data.Models.BuyerModels;
 using BackendApi.Data.Models.SellerModels;
+using System.Text;
 
 namespace BackendApi.Controllers
 {
@@ -51,7 +52,6 @@ namespace BackendApi.Controllers
                 LastName = dto.LastName,
                 passwordhash = passwordHash,
                 passwordSalt = passwordSalt,
-                EmailVerificationToken = CreateRandomToken(),
             };
 
             await _context.Users.AddAsync(user, cancellationToken);
@@ -164,7 +164,7 @@ namespace BackendApi.Controllers
         [HttpPost("send-verification-mail")]
         public async Task<IActionResult> SendVerificationEmail(EmailVerificationRequest request)
         {
-            var user = await _context.Users.AsNoTracking().FirstOrDefaultAsync( u => u.Id == request.userId);
+            var user = await _context.Users.FirstOrDefaultAsync( u => u.Id == request.userId);
             if (user == null)
             {
                 return BadRequest("Invalid User");
@@ -174,7 +174,15 @@ namespace BackendApi.Controllers
                 return BadRequest("Email is already verified");
             }
 
-            var verificationLink = "";
+            //Get and Hash otp
+            var otp = new Random().Next(100000, 999999).ToString();
+            var hashedOtp = HashOtp(otp);
+
+            // Store the hashed OTP and expiry time
+            user.Otp = hashedOtp;
+            user.OtpExpiry = DateTime.Now.AddMinutes(10);
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
 
             var emailBody = "<!DOCTYPE html>" +
                 "<html lang=\"en\">" +
@@ -182,9 +190,9 @@ namespace BackendApi.Controllers
                 "</head>" +
                 "<body> " +
                 " <div style=\"background-color: #f4f4f4; padding: 20px;\">" +
-                "<p style=\"font-size: 18px;\"><b>Hello, <span style=\"color: #007bff;\"> " + user.FirstName+ "," + user.LastName +" </span>!</b></p>" +
-                "<p style=\"font-size: 16px;\">Please click on the button below to complete verifying your email address and login:</p>" +
-                "<a href=\"" + verificationLink + "\" style=\"display: inline-block; background-color: #007bff; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;\">Verify Email</a>" +
+                "<p style=\"font-size: 18px;\"><b>Hello!</b></p>" +
+                "<p style=\"font-size: 16px;\">Below is your verification otp number</p>" +
+                "<div href=\" style=\"display: inline-block; background-color: #007bff; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;\">" + otp + "</div>" +
                 " </body>" +
                 "</html>";
 
@@ -195,23 +203,38 @@ namespace BackendApi.Controllers
         }
 
 
-        [HttpGet("verify")]
-        public async Task<IActionResult> Verify([FromQuery] EmailVerificationRequest request)
+        [HttpPatch("verify-otp")]
+        public async Task<IActionResult> Verify(OtpVerificationRequest request)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.EmailVerificationToken == request.token);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email && u.Id == request.userId);
             if (user == null)
             {
-                return BadRequest("Invalid token");
+                return BadRequest("User not Valid");
             }
             if (user.VerifiedAt.HasValue)
             {
                 return BadRequest("Email is already verified");
             }
 
+            // Hash the input OTP for comparison
+            var hashedInputOtp = HashOtp(request.Otp);
+
+            // Check if the OTP is correct and not expired
+            if (user.Otp != hashedInputOtp)
+            {
+                return BadRequest("Invalid OTP");
+            }
+            if(user.OtpExpiry < DateTime.Now)
+            {
+                return BadRequest("OTP has expired");
+            }
+
             user.VerifiedAt = DateTime.Now;
+            user.Otp = null;
+            user.OtpExpiry = null;
             await _context.SaveChangesAsync();
 
-            return Ok("Email Verified Successfully");
+            return Ok(user);
         }
 
 
@@ -256,6 +279,19 @@ namespace BackendApi.Controllers
             {
                 var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
                 return computedHash.SequenceEqual(passwordHash);
+            }
+        }
+
+        private string HashOtp(string otp)
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                // Convert OTP to byte array
+                var otpBytes = Encoding.UTF8.GetBytes(otp);
+                // Compute the hash
+                var hashBytes = sha256.ComputeHash(otpBytes);
+                // Convert the hash back to a string
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
             }
         }
     }

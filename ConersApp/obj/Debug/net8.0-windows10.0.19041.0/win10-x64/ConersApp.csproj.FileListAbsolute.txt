@@ -295,3 +295,14 @@ C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.1904
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RazorClassLibrary1.dll
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BackendClassLibrary.pdb
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\RazorClassLibrary1.pdb
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Buttons.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Core.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Data.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Inputs.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Popups.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Spinner.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.SplitButtons.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Blazor.Themes.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Syncfusion.Licensing.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.sourcelink.json
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Pages\Verification.razor.rz.scp.css

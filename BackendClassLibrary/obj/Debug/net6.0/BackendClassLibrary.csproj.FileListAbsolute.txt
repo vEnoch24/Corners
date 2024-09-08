@@ -12,3 +12,4 @@ C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\obj\Debug\net6.0\refint
 C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\obj\Debug\net6.0\BackendClassLibrary.pdb
 C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\obj\Debug\net6.0\BackendClassLibrary.genruntimeconfig.cache
 C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\obj\Debug\net6.0\ref\BackendClassLibrary.dll
+C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\obj\Debug\net6.0\BackendClassLibrary.sourcelink.json
