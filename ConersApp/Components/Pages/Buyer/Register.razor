@@ -67,7 +67,7 @@
             <Animate Auto Animation="Animations.FadeLeft" DelayMilliseconds="100" >
             <MudPaper Elevation="5" Class="pa-4 mud-height-full">
                 <MudText>Already have an account?</MudText>
-                    <MudButton Href="/verification" Variant="Variant.Filled" Color="Color.Secondary" Class="mt-3" FullWidth="true" StartIcon="@Icons.Material.Filled.Login">
+                    <MudButton Href="/login" Variant="Variant.Filled" Color="Color.Secondary" Class="mt-3" FullWidth="true" StartIcon="@Icons.Material.Filled.Login">
                     Log in
                 </MudButton>
                     <MudDivider Class="my-2" />
@@ -95,56 +95,76 @@
 
     private RegisterModel registerModel { get; set; } = new();
     private OtpModel otpModel { get; set; } = new();
-    private string _baseUrl = "https://localhost:7259/";
+    private string _baseUrl;
     private string? errorMessage;
     private bool isBusy = false;
+
+
+    private void SetBaseUrl()
+    {
+        if (DeviceInfo.Platform == DevicePlatform.Android)
+        {
+            _baseUrl = "http://10.0.2.2:44365/";
+        }
+        else
+        {
+            _baseUrl = "https://localhost:44365/";
+        }
+    }
 
     private async Task RegisterAsync()
     {
 
-        navigationManager.NavigateTo("/verification");
+        SetBaseUrl();
+        //navigationManager.NavigateTo("/verification");
 
-        // try
-        // {
-        //     using (var client = new HttpClient())
-        //     {
-        //         var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(registerModel);
-        //         var response = await client.PostAsync($"{_baseUrl}api/Account/register", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+        try
+        {
+            isBusy = true;
+            using (var client = new HttpClient())
+            {
+                var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(registerModel);
+                var response = await client.PostAsync($"{_baseUrl}api/Account/register", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
 
-        //         if (response.IsSuccessStatusCode)
-        //         {
-        //             var contentStr = await response.Content.ReadAsStringAsync();
-        //             var authResponse = JsonConverter.Deserialize<AuthResponseDto>(contentStr);
+                if (response.IsSuccessStatusCode)
+                {
+                    var contentStr = await response.Content.ReadAsStringAsync();
+                    var authResponse = JsonConverter.Deserialize<AuthResponseDto>(contentStr);
 
-        //             var serialized = JsonConverter.Serialize(authResponse);
-        //             await SecureStorage.SetAsync(AuthenticationState.AuthStoreKey, serialized);
+                    otpModel.Email = authResponse.User.Email;
+                    otpModel.userId = authResponse.User.Id;
 
-        //             await SendOtpMail();
+                    var serialized = JsonConverter.Serialize(authResponse);
+                    await SecureStorage.SetAsync(AuthenticationState.AuthStoreKey, serialized);
 
-        //             // AuthenticationState.LoadState(authResponse);
-        //         }
-        //         else
-        //         {
-        //             errorMessage = await response.Content.ReadAsStringAsync();
+                    await SendOtpMail();
 
-        //             Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
-        //             Snackbar.Configuration.ShowTransitionDuration = 100;
-        //             Snackbar.Add(errorMessage, Severity.Error);
+                    // AuthenticationState.LoadState(authResponse);
+                }
+                else
+                {
+                    isBusy = false;
+                    errorMessage = await response.Content.ReadAsStringAsync();
 
-        //             //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
-        //         }
-        //     }
-        // }
-        // catch (Exception ex)
-        // {
-        //     errorMessage = ex.Message;
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add(errorMessage, Severity.Error);
 
-        //     Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
-        //     Snackbar.Configuration.ShowTransitionDuration = 100;
-        //     Snackbar.Add(errorMessage, Severity.Error);
+                    //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            isBusy = false;
+            errorMessage = ex.Message;
 
-        //     //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
-        // }
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
+
+            //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+        }
 
     }
 
@@ -166,6 +186,7 @@
         }
         catch(Exception ex)
         {
+            isBusy = false;
             errorMessage = ex.Message;
 
             Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;

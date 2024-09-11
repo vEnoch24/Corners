@@ -25,6 +25,7 @@ namespace ConersApp
 #endif
 
             builder.Services.AddSyncfusionBlazor();
+
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(
                 builder.Configuration.GetSection("SyncLicense:ApiKey").Value
             );

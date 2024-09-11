@@ -185,6 +185,7 @@ body[b-o51tba5a6m] {
 /* Default style for larger screens */
 .otp-input-responsive[b-o51tba5a6m] {
     width: 30%;
+    height: 200px;
     margin: 0 auto;
 }
 

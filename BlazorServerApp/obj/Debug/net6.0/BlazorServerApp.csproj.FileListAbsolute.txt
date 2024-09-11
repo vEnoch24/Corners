@@ -97,3 +97,4 @@ C:\Users\Enoch\source\repos\MauiApp2\BlazorServerApp\bin\Debug\net6.0\Newtonsoft
 C:\Users\Enoch\source\repos\MauiApp2\BlazorServerApp\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Enoch\source\repos\MauiApp2\BlazorServerApp\bin\Debug\net6.0\Properties\launchSettings.json
 C:\Users\Enoch\source\repos\MauiApp2\BlazorServerApp\obj\Debug\net6.0\BlazorSe.F9AEE818.Up2Date
+C:\Users\Enoch\source\repos\MauiApp2\BlazorServerApp\obj\Debug\net6.0\BlazorServerApp.sourcelink.json

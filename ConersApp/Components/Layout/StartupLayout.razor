@@ -47,7 +47,7 @@
 
     protected async override Task OnInitializedAsync()
     {
-
+        SecureStorage.RemoveAll();
         //var authStateJson = await JsRuntime.InvokeAsync<string>("window.getFromStorage", AuthenticationState.AuthStoreKey);
         var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
         if (!string.IsNullOrWhiteSpace(authStateJson))

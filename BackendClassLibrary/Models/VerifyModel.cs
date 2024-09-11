@@ -8,7 +8,6 @@ namespace BackendClassLibrary.Models
 {
     public class VerifyModel
     {
-        public string Id { get; set; }
         public string Email { get; set; }
         public string Otp { get; set; }
     }

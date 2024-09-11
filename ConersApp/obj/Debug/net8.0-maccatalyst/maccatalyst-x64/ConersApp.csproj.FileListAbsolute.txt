@@ -428,3 +428,4 @@ C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-maccatalyst\macc
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ConersApp.pdb
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ConersApp.genruntimeconfig.cache
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\ConersApp.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\scopedcss\Components\Pages\Verification.razor.rz.scp.css

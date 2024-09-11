@@ -16,10 +16,48 @@
     <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate="true" />
 </MudContainer> *@
 
+<MudItem Style="margin-bottom: 20px">
+    <MudText Sty Typo="Typo.h3" Align="Align.Center">
+        <b>Verification</b>
+    </MudText>
+    <MudText Typo="Typo.body2" Align="Align.Center">
+        We have sent a one-time verification code to your provided email address
+    </MudText>
+</MudItem>
+
 <MudContainer Class="mt-16 px-8" MaxWidth="MaxWidth.False">
-    <MudPaper Class="pa-16 ma-2" Elevation="3">
-        <SfOtpInput Value="@otp" Length="4" Type="OtpInputType.Number" CssClass=""></SfOtpInput>
-    </MudPaper>
+    <MudCard Class="pa-16 ma-2" Elevation="3">
+        <MudCardContent>
+            <SfOtpInput @bind-Value="otp" Length="4" Type="OtpInputType.Number" CssClass=""></SfOtpInput>
+        </MudCardContent>
+       <MudCardActions>
+            <MudButton Variant="Variant.Text" Color="Color.Primary">resend otp</MudButton>
+
+             @if (!isBusy)
+             {
+                <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           Class="ml-auto"
+                           OnClick="Verify">
+                    Verify
+                </MudButton>
+            }
+            else
+            {
+               <MudButton ButtonType="ButtonType.Submit"
+                           Variant="Variant.Filled"
+                           Color="Color.Primary"
+                           Class="ml-auto"
+                           OnClick="Verify"
+                           Disabled=true>
+                    <MudProgressCircular Color="Color.Default" Size="Size.Small" Style="margin-right: 8px" Indeterminate="true" />
+                    Verify
+                </MudButton> 
+            }
+
+       </MudCardActions>
+    </MudCard>
 </MudContainer>
 
 
@@ -29,10 +67,22 @@
 
     private VerifyModel verifyModel { get; set; } = new();
 
-    private string _baseUrl = "https://localhost:7259/";
+    private string _baseUrl;
     private string? errorMessage;
     private bool isBusy = false;
     private string otp;
+
+    private void SetBaseUrl()
+    {
+        if (DeviceInfo.Platform == DevicePlatform.Android)
+        {
+            _baseUrl = "http://10.0.2.2:44365/";
+        }
+        else
+        {
+            _baseUrl = "https://localhost:44365/";
+        }
+    }
 
     protected async override Task OnInitializedAsync()
     {
@@ -46,31 +96,45 @@
 
     private async Task Verify()
     {
+        SetBaseUrl();
+
         try
         {
+            isBusy = true;
             var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
             var authState = JsonConverter.Deserialize<AuthResponseDto>(authStateJson);
 
             var model = new VerifyModel()
             {
-                Email = authState.User.Email,
-                Id = authState.User.Id,
+                Email = authState.User.Email,     
                 Otp = otp
             };
 
             using (var client = new HttpClient())
             {
                 var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(model);
-                var response = await client.PatchAsync($"{_baseUrl}api/Account/verify-otp", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+                var response = await client.PostAsync($"{_baseUrl}api/Account/verify-otp", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
 
                 if(response.IsSuccessStatusCode)
                 {
                     AuthenticationState.LoadState(authState);
                 }
+                else
+                {
+                    isBusy = false;
+                    errorMessage = await response.Content.ReadAsStringAsync();
+
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add(errorMessage, Severity.Error);
+
+                    //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+                }
             }
         }
         catch (Exception ex)
         {
+            isBusy = false;
             errorMessage = ex.Message;
 
             Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;

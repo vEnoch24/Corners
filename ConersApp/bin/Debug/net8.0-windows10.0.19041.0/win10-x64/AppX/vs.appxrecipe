@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-08T22:51:30.496</Modified>
+      <Modified>2024-09-11T13:00:58.183</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-08T22:04:35.016</Modified>
+      <Modified>2024-09-11T10:16:55.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.runtimeconfig.json">
       <PackagePath>ConersApp.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.dll">
       <PackagePath>ConersApp.dll</PackagePath>
-      <Modified>2024-09-08T22:51:28.239</Modified>
+      <Modified>2024-09-11T12:47:31.989</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ConersApp.exe</PackagePath>
-      <Modified>2024-09-08T22:51:28.340</Modified>
+      <Modified>2024-09-11T12:47:31.989</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -315,7 +315,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.deps.json">
       <PackagePath>ConersApp.deps.json</PackagePath>
-      <Modified>2024-09-08T22:51:29.688</Modified>
+      <Modified>2024-09-11T10:16:54.821</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -1043,11 +1043,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\bin\Debug\net6.0\BackendClassLibrary.dll">
       <PackagePath>BackendClassLibrary.dll</PackagePath>
-      <Modified>2024-09-08T20:05:45.847</Modified>
+      <Modified>2024-09-11T12:39:46.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\bin\Debug\net6.0\RazorClassLibrary1.dll">
       <PackagePath>RazorClassLibrary1.dll</PackagePath>
-      <Modified>2024-09-05T21:30:23.609</Modified>
+      <Modified>2024-09-11T12:39:46.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\Properties\launchSettings.json">
       <PackagePath>Properties\launchSettings.json</PackagePath>

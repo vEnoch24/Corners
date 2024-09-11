@@ -440,3 +440,4 @@ C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-ios\iossimulator
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-ios\iossimulator-x64\ConersApp.pdb
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-ios\iossimulator-x64\ConersApp.genruntimeconfig.cache
 C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-ios\iossimulator-x64\ref\ConersApp.dll
+C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-ios\iossimulator-x64\scopedcss\Components\Pages\Verification.razor.rz.scp.css

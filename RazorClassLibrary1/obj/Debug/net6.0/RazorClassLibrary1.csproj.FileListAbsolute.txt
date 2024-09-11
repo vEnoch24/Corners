@@ -20,3 +20,4 @@ C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\obj\Debug\net6.0\refint\
 C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\obj\Debug\net6.0\RazorClassLibrary1.pdb
 C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\obj\Debug\net6.0\ref\RazorClassLibrary1.dll
 C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\bin\Debug\net6.0\Properties\launchSettings.json
+C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\obj\Debug\net6.0\RazorClassLibrary1.sourcelink.json
