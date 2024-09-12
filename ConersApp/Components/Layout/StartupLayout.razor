@@ -13,11 +13,10 @@
 <MudSnackbarProvider />
 
 
-<MudThemeProvider />
 
 <CascadingValue Value="AuthenticationState" Name="AuthenticationState">
     <MudLayout>
-        <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" @ref="@_mudThemeProvider" Theme="@_theme" />
+        <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" @ref="@_mudThemeProvider" Theme="@_customTheme" />
         <MudMainContent>
             <MudContainer MaxWidth="MaxWidth.Medium" Style="margin-top: 20px; padding: 20px">
                 @Body
@@ -35,6 +34,50 @@
     private bool _isDarkMode;
 
 
+    MudTheme _customTheme = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            Primary = "#1DB954", // Spotify Green
+            Secondary = "#6A6A6A", // Dark Gray for secondary text
+            Background = "#FFFFFF", // White background for light mode
+            AppbarBackground = "#FFFFFF", // White background for the AppBar in light mode
+            Surface = "#F5F5F5", // Light gray surface color for light mode
+            TextPrimary = "#191414", // Black primary text color
+            TextSecondary = "#6A6A6A", // Dark gray secondary text
+            AppbarText = "#191414", // Black text for AppBar
+            Error = "#E91429" // Error color (Spotify red)
+        },
+
+        PaletteDark = new PaletteDark()
+        {
+                Primary = "#1ED760", // Spotify Green
+                Secondary = "#FFFFFF", // Light Gray for secondary text
+                Background = "#121212", // Dark charcoal background for dark mode
+            AppbarBackground = "#121212", // Dark background for the AppBar in dark mode
+            Surface = "#282828", // Darker gray surface color for dark mode
+            TextPrimary = "#FFFFFF", // White primary text color
+            TextSecondary = "#B3B3B3", // Light gray secondary text
+            AppbarText = "#FFFFFF", // White text for AppBar
+            Error = "#E91429" // Error color (Spotify red)
+        },
+
+        Typography = new Typography()
+        {
+            Default = new Default()
+            {
+                FontFamily = new[] { "Poppins", "Helvetica", "Arial", "sans-serif" }
+            },
+
+            H4 = new H4()
+            {
+                FontSize = "2rem",
+                FontWeight = 900,
+
+            }
+        }
+    };
+
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
@@ -47,7 +90,7 @@
 
     protected async override Task OnInitializedAsync()
     {
-        SecureStorage.RemoveAll();
+        //SecureStorage.RemoveAll();
         //var authStateJson = await JsRuntime.InvokeAsync<string>("window.getFromStorage", AuthenticationState.AuthStoreKey);
         var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
         if (!string.IsNullOrWhiteSpace(authStateJson))

@@ -3,13 +3,13 @@
     "ContainingType": "CornersBackendApi.Controllers.AccountController",
     "Method": "ForgotPassword",
     "RelativePath": "api/Account/forgot-password",
-    "HttpMethod": "POST",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Email",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "CornersBackendApi.RequestPayload.ForgotPasswordRequest",
         "IsRequired": true
       }
     ],
@@ -93,7 +93,7 @@
     "ContainingType": "CornersBackendApi.Controllers.AccountController",
     "Method": "ResetPassword",
     "RelativePath": "api/Account/reset-password",
-    "HttpMethod": "POST",
+    "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -130,6 +130,27 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "Method": "SendPasswordResetEmail",
+    "RelativePath": "api/Account/send-passwordreset-mail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "CornersBackendApi.Controllers.AccountController",

@@ -7,6 +7,7 @@
 @using ConersApp.State;
 
 @inject ISnackbar Snackbar;
+@inject NavigationManager navigationManager;
 
 <MudItem Style="margin-bottom: 20px">
     <MudText Sty Typo="Typo.h3" Align="Align.Center">
@@ -44,6 +45,9 @@
                                             @bind-Value="loginModel.Password" For="@(() => loginModel.Password)" InputType="InputType.Password" />
                         </MudCardContent>
                         <MudCardActions>
+                            <MudButton Href="/pre-password-reset" Variant="Variant.Text" Color="Color.Primary">forgot password?</MudButton>
+
+
                             @if(!isBusy)
                             {
                                 <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary" Class="ml-auto">Login</MudButton>
@@ -64,7 +68,7 @@
             <Animate Auto Animation="Animations.FadeLeft" DelayMilliseconds="100">
                 <MudPaper Elevation="5" Class="pa-4 mud-height-full">
                     <MudText>Don't have an account?</MudText>
-                    <MudButton Href="/register" Variant="Variant.Filled" Color="Color.Secondary" Class="mt-3" FullWidth="true" StartIcon="@Icons.Material.Filled.PersonAdd">
+                    <MudButton Href="/register" Variant="Variant.Filled" Color="Color.Primary" Class="mt-3" FullWidth="true" StartIcon="@Icons.Material.Filled.PersonAdd">
                         Register
                     </MudButton>
                     <MudDivider Class="my-2" /> 
@@ -148,7 +152,7 @@
                     Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
                     Snackbar.Configuration.ShowTransitionDuration = 100;
                     Snackbar.Add(errorMessage, Severity.Error);
-                    
+
                     //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK"); 
                 }
             }
@@ -166,6 +170,9 @@
         }
 
     }
+
+   
+
 
 
 }

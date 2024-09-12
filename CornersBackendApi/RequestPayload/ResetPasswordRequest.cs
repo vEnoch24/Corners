@@ -1,13 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CornersBackendApi.CustomAttributes;
+using System.ComponentModel.DataAnnotations;
 
 namespace CornersBackendApi.RequestPayload
 {
     public class ResetPasswordRequest
     {
-        [Required]
         public string Token { get; set; }
 
-        [Required, MaxLength(20), DataType(DataType.Password)]
+        [Required, DataType(DataType.Password)]
+        [StrongPassword]
         public string Password { get; set; } = string.Empty;
 
         [Required, Compare("Password")]

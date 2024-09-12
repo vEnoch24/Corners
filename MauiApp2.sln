@@ -10,7 +10,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendClassLibrary", "Back
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConersApp", "ConersApp\ConersApp.csproj", "{00A5E6BD-1083-40B0-B1ED-9E271443CA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CornersBackendApi", "CornersBackendApi\CornersBackendApi.csproj", "{36E3498D-9ABC-4874-B38E-6130CC0E2A85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CornersBackendApi", "CornersBackendApi\CornersBackendApi.csproj", "{36E3498D-9ABC-4874-B38E-6130CC0E2A85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Authorization;
 using CornersBackendApi.Data.Models.BuyerModels;
 using CornersBackendApi.Data.Models.SellerModels;
 using System.Text;
+using static System.Net.WebRequestMethods;
 
 namespace CornersBackendApi.Controllers
 {
@@ -80,23 +81,33 @@ namespace CornersBackendApi.Controllers
         }
 
 
-        [HttpPost("forgot-password")]
-        public async Task<IActionResult> ForgotPassword([FromBody] string Email)
+        [HttpPatch("forgot-password")]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordRequest request)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == Email);
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
             if (user == null)
             {
                 return BadRequest("User not found");
             }
 
-            user.PasswordRestToken = CreateRandomToken();
-            user.ResetTokenExpires = DateTime.Now.AddDays(1);
-            await _context.SaveChangesAsync();
+            try
+            {
+                user.PasswordRestToken = new Random().Next(10000, 100000).ToString();
+                user.ResetTokenExpires = DateTime.Now.AddMinutes(30);
+                await SendPasswordResetEmail(request.Email, user.PasswordRestToken);
 
-            return Ok("You may now reset your password");
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+           
+
+            return Ok(user);
         }
 
-        [HttpPost("reset-password")]
+        [HttpPatch("reset-password")]
         public async Task<IActionResult> ResetPassword(ResetPasswordRequest request)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.PasswordRestToken == request.Token);
@@ -204,6 +215,28 @@ namespace CornersBackendApi.Controllers
             return Ok("User Verification Sent");
         }
 
+        [HttpPost("send-passwordreset-mail")]
+        public async Task<IActionResult> SendPasswordResetEmail(string email, string token)
+        {
+            var emailBody = "<!DOCTYPE html>" +
+               "<html lang=\"en\">" +
+               "<head>" +
+               "</head>" +
+               "<body> " +
+               " <div style=\"background-color: #f4f4f4; padding: 20px;\">" +
+               "<p style=\"font-size: 18px;\"><b>Hello!</b></p>" +
+               "<p style=\"font-size: 16px;\">Below is your password reset token</p>" +
+               "<p style=\"font-size: 16px;\">Expires in 30 minutes</p>" +
+               "<div href=\" style=\"display: inline-block; background-color: #007bff; color: #ffffff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 16px;\">" + token + "</div>" +
+               " </body>" +
+               "</html>";
+
+            var emailDto = new EmailDto(email, "Password Reset", emailBody);
+            await _mailService.SendEmailAsync(emailDto);
+
+            return Ok("Password reset token sent");
+        }
+
 
         [HttpPost("verify-otp")]
         public async Task<IActionResult> Verify(OtpVerificationRequest request)
@@ -277,9 +310,9 @@ namespace CornersBackendApi.Controllers
 
         private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
         {
-            using (var hmac = new HMACSHA512(passwordSalt))
+            using (var pbkdf2 = new Rfc2898DeriveBytes(password, passwordSalt, 100000, HashAlgorithmName.SHA512))
             {
-                var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                var computedHash = pbkdf2.GetBytes(64);
                 return computedHash.SequenceEqual(passwordHash);
             }
         }
