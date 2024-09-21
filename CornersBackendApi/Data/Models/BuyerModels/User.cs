@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CornersBackendApi.Enum;
+using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CornersBackendApi.Data.Models.BuyerModels
@@ -6,14 +8,13 @@ namespace CornersBackendApi.Data.Models.BuyerModels
     [Table("User")]
     public class User
     {
+        [Key]
         public string Id { get; set; } = Guid.NewGuid().ToString();
-        [Required]
         public string FirstName { get; set; }
-        [Required]
         public string LastName { get; set; }
-        [Required]
         [EmailAddress]
         public string Email { get; set; }
+        public string Role { get; set; } = Roles.Buyer.ToString();
         public string? Otp { get; set; }
         public DateTime? OtpExpiry { get; set; }
         public DateTime DateAdded { get; set; } = DateTime.Now;

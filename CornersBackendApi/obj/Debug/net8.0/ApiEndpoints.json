@@ -33,29 +33,23 @@
   },
   {
     "ContainingType": "CornersBackendApi.Controllers.AccountController",
-    "Method": "Login",
-    "RelativePath": "api/Account/id",
+    "Method": "GetGoogleAuthSettings",
+    "RelativePath": "api/Account/google-auth",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "Method": "GoogleResponse",
+    "RelativePath": "api/Account/google-response",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "CornersBackendApi.Controllers.AccountController",
@@ -71,6 +65,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "Method": "GoogleMauiLogin",
+    "RelativePath": "api/Account/maui-signin-google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -172,7 +176,7 @@
     "ContainingType": "CornersBackendApi.Controllers.AccountController",
     "Method": "GoogleLogin",
     "RelativePath": "api/Account/signin-google",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
@@ -196,6 +200,38 @@
   },
   {
     "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "Method": "Login",
+    "RelativePath": "api/BuinessAccount/business-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "CornersBackendApi.Dto.SellerDtos.LoginBusinessDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/BuinessAccount/forgot-password",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CornersBackendApi.RequestPayload.ForgotPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
     "Method": "RegisterBusiness",
     "RelativePath": "api/BuinessAccount/register-business",
     "HttpMethod": "POST",
@@ -205,6 +241,75 @@
       {
         "Name": "dto",
         "Type": "CornersBackendApi.Dto.SellerDtos.RegisterBusinessDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/BuinessAccount/reset-password",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CornersBackendApi.RequestPayload.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "Method": "SendPasswordResetEmail",
+    "RelativePath": "api/BuinessAccount/send-passwordreset-mail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "Method": "SendVerificationEmail",
+    "RelativePath": "api/BuinessAccount/send-verification-mail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CornersBackendApi.RequestPayload.EmailVerificationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "Method": "Verify",
+    "RelativePath": "api/BuinessAccount/verify-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CornersBackendApi.RequestPayload.OtpVerificationRequest",
         "IsRequired": true
       }
     ],

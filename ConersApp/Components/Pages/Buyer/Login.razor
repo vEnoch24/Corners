@@ -5,29 +5,40 @@
 @using BackendClassLibrary.Helper;
 @using System.Text;
 @using ConersApp.State;
+@using Newtonsoft.Json.Linq
+@using System.Diagnostics
+@using System.Net
 
 @inject ISnackbar Snackbar;
 @inject NavigationManager navigationManager;
 
-<MudItem Style="margin-bottom: 20px">
-    <MudText Sty Typo="Typo.h3" Align="Align.Center">
-        <b>Welcome back</b>
-    </MudText>
-    <MudText Typo="Typo.body2" Align="Align.Center">
-        Log in to continue to Catalogue.
-    </MudText>
-    <MudText Typo="Typo.h5" Align="Align.Center">
-        OR
-    </MudText>
+<MudGrid Justify="Justify.Center">
+    <MudItem Style="margin-bottom: 20px">
+        <MudText Sty Typo="Typo.h3" Align="Align.Center">
+            <b>Welcome back</b>
+        </MudText>
+        <MudText Typo="Typo.body2" Align="Align.Center">
+            Log in to continue to Catalogue.
+        </MudText>
+        <MudText Typo="Typo.h5" Align="Align.Center">
+            OR
+        </MudText>
+
+    </MudItem>
+
+    <MudFlexBreak/>
+
     <MudPaper Elevation="5">
         <MudButton Href="/"
-                Variant="Variant.Outlined" 
-                Color="Color.Primary" 
-                FullWidth="true">
+                   Variant="Variant.Outlined"
+                   Color="Color.Primary"
+                   FullWidth="false">
             Become a seller
         </MudButton>
     </MudPaper>
-</MudItem>
+</MudGrid>
+
+
 
 
 
@@ -42,7 +53,10 @@
                             <MudTextField Label="Email" Variant="Variant.Outlined" Class="mt-3"
                                             @bind-Value="loginModel.Email" For="@(() => loginModel.Email)" />
                             <MudTextField Label="Password" Variant="Variant.Outlined" Class="mt-3"
-                                            @bind-Value="loginModel.Password" For="@(() => loginModel.Password)" InputType="InputType.Password" />
+                                            @bind-Value="loginModel.Password" For="@(() => loginModel.Password)"
+                                      InputType="@PasswordInput" Adornment="Adornment.End" 
+                                      AdornmentIcon="@PasswordInputIcon" 
+                                      OnAdornmentClick="ShowPasswordClick" AdornmentAriaLabel="Show Password" />
                         </MudCardContent>
                         <MudCardActions>
                             <MudButton Href="/pre-password-reset" Variant="Variant.Text" Color="Color.Primary">forgot password?</MudButton>
@@ -74,7 +88,7 @@
                     <MudDivider Class="my-2" /> 
                     
                     <MudText Align="Align.Center">OR</MudText>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true" >
+                    <MudButton OnClick="GoogleLoginAsync" Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true">
                         <MudIcon Icon="@Icons.Custom.Brands.Google" Class="mr-2" /> Continue with Google
                     </MudButton>
                     <MudButton Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true" >
@@ -108,7 +122,28 @@
     private string _baseUrl;
     private string? errorMessage;
     private bool isBusy = false;
+    private string clientId;
+    private string clientSecret;
 
+    private bool isShow;
+    private InputType PasswordInput = InputType.Password;
+    private string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+
+    void ShowPasswordClick()
+    {
+        @if (isShow)
+        {
+            isShow = false;
+            PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+            PasswordInput = InputType.Password;
+        }
+        else
+        {
+            isShow = true;
+            PasswordInputIcon = Icons.Material.Filled.Visibility;
+            PasswordInput = InputType.Text;
+        }
+    }
 
     private void SetBaseUrl()
     {
@@ -120,6 +155,11 @@
         {
             _baseUrl = "https://localhost:44365/";
         }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GetGoogleAuthSettings();
     }
 
     private async Task LoginAsync()
@@ -171,8 +211,163 @@
 
     }
 
-   
+    private async Task GetGoogleAuthSettings()
+    {
+        try
+        {
+            SetBaseUrl();
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync($"{_baseUrl}api/Account/google-auth");
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadFromJsonAsync<GoogleAuthResponseModel>();
+                    clientId = result.ClientId;
+                    clientSecret = result.ClientSecret;
+                }
+                else
+                {
+                    errorMessage = "Failed to retrieve Google Auth settings.";
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+    private async Task GoogleLoginAsync()
+    {
+        try
+        {
+            SetBaseUrl();
+
+            // isBusy = true;
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync($"{_baseUrl}api/Account/maui-signin-google", null);
+
+                if(response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    var googleUrl = JObject.Parse(content)["url"].ToString();
 
 
+                    if (DeviceInfo.Platform == DevicePlatform.Android || DeviceInfo.Platform == DevicePlatform.iOS)
+                    {
+                        var authResult = await WebAuthenticator.AuthenticateAsync(
+                        new Uri(googleUrl),
+                        new Uri($"http://localhost:5000/authcallback/")); // The redirect URI
+
+                        // Handle the result, e.g., exchange the authorization code for an access token
+                        if (authResult.Properties.TryGetValue("code", out string code))
+                        {
+                            await ExchangeCodeForToken(code);
+                        }
+                    }
+                    else
+                    {
+                        var psi = new ProcessStartInfo
+                            {
+                                FileName = googleUrl,
+                                UseShellExecute = true
+                            };
+                        Process.Start(psi);
+
+                        await ListenForOAuthCallback();
+                    }
+
+                   
+                }
+                else
+                {
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add("Google Login Failed", Severity.Error);
+                }
+            }
+
+        }
+        catch(Exception ex)
+        {
+            errorMessage = ex.Message;
+
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
+        }
+    }
+
+    private async Task ListenForOAuthCallback()
+    {
+        var listener = new HttpListener();
+        listener.Prefixes.Add("http://localhost:5000/authcallback/");
+        listener.Start();
+
+        Console.WriteLine("Waiting for Google OAuth callback...");
+
+        var context = await listener.GetContextAsync();
+        var request = context.Request;
+
+        // Extract the authorization code from the query string
+        var code = request.QueryString["code"];
+
+        // Respond to the browser that authentication was successful
+        var responseString = "<html><body>Authentication successful. You can close this window.</body></html>";
+        var buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+        context.Response.ContentLength64 = buffer.Length;
+        await context.Response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+        context.Response.OutputStream.Close();
+
+        listener.Stop();
+
+        // Now exchange the authorization code for tokens
+        await ExchangeCodeForToken(code);
+    }
+
+
+    private async Task ExchangeCodeForToken(string code)
+    {
+        var tokenRequestUrl = "https://oauth2.googleapis.com/token";
+
+        var postData = new Dictionary<string, string>
+        {
+            { "client_id", $"{clientId}" },
+            { "client_secret", $"{clientSecret}" },
+            { "code", code },
+            { "redirect_uri", $"http://localhost:5000/authcallback/" },
+            { "grant_type", "authorization_code" }
+        };
+
+        using (var client = new HttpClient())
+        {
+            var content = new FormUrlEncodedContent(postData);
+            var response = await client.PostAsync(tokenRequestUrl, content);
+            var responseString = await response.Content.ReadAsStringAsync();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var tokenResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleTokenResponse>(responseString);
+                // Handle the access token
+                //Console.WriteLine($"Access Token: {tokenResponse.AccessToken}");
+
+                Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                Snackbar.Configuration.ShowTransitionDuration = 100;
+                Snackbar.Add($"Access Token: {tokenResponse.AccessToken}", Severity.Success);
+            }
+            else
+            {
+                //Console.WriteLine($"Error exchanging code for token: {responseString}");
+
+                errorMessage = $"Error exchanging code for token: {responseString}";
+
+                Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                Snackbar.Configuration.ShowTransitionDuration = 100;
+                Snackbar.Add(errorMessage, Severity.Error);
+            }
+        }
+    }
 
 }

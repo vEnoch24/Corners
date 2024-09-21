@@ -7,7 +7,10 @@
 
 <Router AppAssembly="@typeof(MauiProgram).Assembly">
 	<Found Context="routeData">
-		@if (routeData.PageType == typeof(Login) || routeData.PageType == typeof(Register) || routeData.PageType == typeof(Verification) || routeData.PageType == typeof(PrePasswordReset) || routeData.PageType == typeof(PasswordReset) || routeData.PageType == typeof(UserTypeSelection) || routeData.PageType == typeof(SellerLogin) || routeData.PageType == typeof(SellerRegister))
+		@if (routeData.PageType == typeof(Login) || routeData.PageType == typeof(Register) || routeData.PageType == typeof(Verification) || routeData.PageType == typeof(PrePasswordReset)
+			|| routeData.PageType == typeof(PasswordReset) || routeData.PageType == typeof(UserTypeSelection)
+				|| routeData.PageType == typeof(SellerLogin) || routeData.PageType == typeof(SellerPrePasswordReset)
+				|| routeData.PageType == typeof(SellerPasswordReset) || routeData.PageType == typeof(SellerRegister))
 		{
 			<LayoutView Layout="@typeof(StartupLayout)">
 				<RouteView RouteData="@routeData" />

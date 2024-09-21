@@ -54,6 +54,10 @@ namespace CornersBackendApi.Migrations
                     b.Property<DateTime?>("ResetTokenExpires")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime?>("VerifiedAt")
                         .HasColumnType("datetime2");
 
@@ -114,6 +118,10 @@ namespace CornersBackendApi.Migrations
 
                     b.Property<DateTime?>("ResetTokenExpires")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("VerifiedAt")
                         .HasColumnType("datetime2");

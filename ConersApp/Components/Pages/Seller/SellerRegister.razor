@@ -1,5 +1,46 @@
-﻿<h3>SellerRegister</h3>
+﻿@page "/seller-register"
+
+@inject IDialogService DialogService;
+@inject ISnackbar Snackbar;
+@inject NavigationManager navigationManager;
+
+<MudGrid Justify="Justify.Center">
+    <MudItem Style="margin-bottom: 20px">
+        <MudText Sty Typo="Typo.h3" Align="Align.Center">
+            <b>Register Your Business</b>
+        </MudText>
+        <MudText Typo="Typo.body2" Align="Align.Center">
+            Start selling your products.
+        </MudText>
+        <MudText Typo="Typo.h5" Align="Align.Center">
+            OR
+        </MudText>
+
+    </MudItem>
+
+    <MudFlexBreak />
+
+    <MudPaper Elevation="5">
+        <MudButton Href="/"
+                   Variant="Variant.Outlined"
+                   Color="Color.Primary"
+                   FullWidth="true">
+            Buy 
+        </MudButton>
+    </MudPaper>
+</MudGrid>
+
+<MudButton @onclick="OpenDialogAsync" Variant="Variant.Filled" Color="Color.Primary">
+    Open Simple Dialog
+</MudButton>
 
 @code {
 
+
+    private Task OpenDialogAsync()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true, MaxWidth = MaxWidth.Large, FullWidth = true };
+
+        return DialogService.ShowAsync<Map>("", options);
+    }
 }

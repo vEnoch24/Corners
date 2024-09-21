@@ -16,6 +16,7 @@ using CornersBackendApi.Data.Models.BuyerModels;
 using CornersBackendApi.Data.Models.SellerModels;
 using System.Text;
 using static System.Net.WebRequestMethods;
+using Microsoft.Extensions.Options;
 
 namespace CornersBackendApi.Controllers
 {
@@ -26,12 +27,17 @@ namespace CornersBackendApi.Controllers
         private readonly ApplicationDbContext _context;
         private readonly TokenService _tokenService;
         private readonly IEmailService _mailService;
+        private readonly GoogleAuthSettingsDto _googleAuthSettings;
+        private readonly IConfiguration _configuration;
 
-        public AccountController(ApplicationDbContext context, TokenService tokenService, IEmailService mailService)
+        public AccountController(ApplicationDbContext context, TokenService tokenService, 
+            IEmailService mailService, IOptions<GoogleAuthSettingsDto> googleAuthSettings, IConfiguration configuration)
         {
             _context = context;
             _tokenService = tokenService;
             _mailService = mailService;
+            _googleAuthSettings = googleAuthSettings.Value;
+            _configuration = configuration;
         }
 
         [HttpPost("register")]
@@ -149,27 +155,64 @@ namespace CornersBackendApi.Controllers
             return Ok(userDto);
         }
 
-        [HttpGet("id")]
-        [Authorize]
-        public ActionResult<string> Login(int id)
+        [HttpGet("google-auth")]
+        public async  Task<IActionResult> GetGoogleAuthSettings()
         {
-            var user = this.User;
-            return "value";
+            return Ok(new
+            {
+                ClientId = _googleAuthSettings.ClientId,
+                ClientSecret = _googleAuthSettings.ClientSecret,
+            });
         }
 
-        [HttpGet("signin-google")]
+        [HttpPost("signin-google")]
         public async Task<IActionResult> GoogleLogin()
         {
-            var response = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            if (response.Principal == null) return BadRequest();
+            var properties = new AuthenticationProperties
+            {
+                RedirectUri = Url.Action("GoogleResponse")
+            };
 
-            var name = response.Principal.FindFirstValue(ClaimTypes.Name);
-            var givenName = response.Principal.FindFirstValue(ClaimTypes.GivenName);
-            var email = response.Principal.FindFirstValue(ClaimTypes.Email);
-            //Do something with the claims
-            // var user = await UserService.FindOrCreate(new { name, givenName, email});
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
 
-            return Ok();
+        [HttpPost("maui-signin-google")]
+        public async Task<IActionResult> GoogleMauiLogin()
+        {
+            var clientId = _configuration.GetSection("Authentication:Google:ClientId").Value; // Read from configuration
+            //var redirectUri = "https://localhost:44365/signin-google"; // Example: "com.companyname.app:/auth";
+            var redirectUri = "http://localhost:5000/authcallback/"; // Example: "com.companyname.app:/auth";
+
+            var googleUrl = "https://accounts.google.com/o/oauth2/auth" +
+                            $"?scope=https%3A//www.googleapis.com/auth/drive.metadata.readonly&" +
+                            $"access_type=offline&" +
+                            $"include_granted_scopes=true&" +
+                            $"response_type=code&" +
+                            $"client_id={clientId}" +
+                            $"&redirect_uri={redirectUri}" ;
+
+            return Ok(new { url = googleUrl });
+        }
+
+        [HttpGet("google-response")]
+        public async Task<IActionResult> GoogleResponse()
+        {
+            var authenticateResult = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            if (!authenticateResult.Succeeded || authenticateResult.Principal == null)
+            {
+                return BadRequest("Google authentication failed.");
+            }
+
+            var claims = authenticateResult.Principal.Identities.FirstOrDefault()?.Claims.Select(claim => new
+            {
+                claim.Issuer,
+                claim.OriginalIssuer,
+                claim.Type,
+                claim.Value
+            });
+
+            return Ok(claims);
         }
 
 
@@ -277,6 +320,7 @@ namespace CornersBackendApi.Controllers
         public async Task<bool> SendMail(EmailDto mailData)
         {
             return await _mailService.SendEmailAsync(mailData);
+
         }
 
         private string CreateRandomToken()
@@ -287,7 +331,7 @@ namespace CornersBackendApi.Controllers
         private AuthResponseDto GenerateToken(User user)
         {
             var token = _tokenService.CreateToken(user);
-            return new AuthResponseDto(new UserDto(user.Id, user.Email, user.FirstName, user.LastName), token);
+            return new AuthResponseDto(new UserDto(user.Id, user.Email, user.FirstName, user.LastName, user.Role), token);
         }
 
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)

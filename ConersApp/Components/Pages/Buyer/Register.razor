@@ -10,23 +10,34 @@
 @inject NavigationManager navigationManager;
 
 
-<MudText Typo="Typo.h3" Align="Align.Center">
-    <b>Create An Account</b>
-</MudText>
-<MudText Typo="Typo.body2" Align="Align.Center">
-    Only takes a few minutes.
-</MudText>
-<MudText Typo="Typo.h5" Align="Align.Center">
-    OR
-</MudText>
-<MudPaper Elevation="5">
-    <MudButton Href="/"
-               Variant="Variant.Outlined"
-               Color="Color.Primary"
-               FullWidth="true">
-        Become a seller
-    </MudButton>
-</MudPaper>
+<MudGrid Justify="Justify.Center">
+    <MudText Typo="Typo.h3" Align="Align.Center">
+        <b>Create An Account</b>
+    </MudText>
+    <MudText Typo="Typo.body2" Align="Align.Center">
+        Only takes a few minutes.
+    </MudText>
+    <MudText Typo="Typo.h5" Align="Align.Center">
+        OR
+    </MudText>
+
+    <MudFlexBreak />
+
+    <MudPaper Elevation="5">
+        <MudButton Href="/"
+                   Variant="Variant.Outlined"
+                   Color="Color.Primary"
+                   FullWidth="true">
+            Become a seller
+        </MudButton>
+    </MudPaper>
+</MudGrid>
+
+@if(DeviceInfo.Platform == DevicePlatform.Android || DeviceInfo.Platform == DevicePlatform.iOS)
+{
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+}
+
 
 
 <EditForm Model="@registerModel" OnValidSubmit="RegisterAsync">
@@ -43,9 +54,15 @@
                     <MudTextField Label="Email" Class="mt-3"
                                   @bind-Value="registerModel.Email" Variant="Variant.Outlined" For="@(() => registerModel.Email)" />
                     <MudTextField Label="Password" HelperText="Choose a strong password" Class="mt-3"
-                                  @bind-Value="registerModel.Password" Variant="Variant.Outlined" For="@(() => registerModel.Password)" InputType="InputType.Password" />
+                                  @bind-Value="registerModel.Password" Variant="Variant.Outlined" For="@(() => registerModel.Password)"
+                                      InputType="@PasswordInput" Adornment="Adornment.End"
+                                      AdornmentIcon="@PasswordInputIcon"
+                                      OnAdornmentClick="ShowPasswordClick" AdornmentAriaLabel="Show Password" />
                     <MudTextField Label="Password" HelperText="Repeat the password" Class="mt-3"
-                                  @bind-Value="registerModel.ConfirmPassword" Variant="Variant.Outlined" For="@(() => registerModel.ConfirmPassword)" InputType="InputType.Password" />
+                                  @bind-Value="registerModel.ConfirmPassword" Variant="Variant.Outlined" For="@(() => registerModel.ConfirmPassword)"
+                                      InputType="@PasswordInput" Adornment="Adornment.End"
+                                      AdornmentIcon="@PasswordInputIcon"
+                                      OnAdornmentClick="ShowPasswordClick" AdornmentAriaLabel="Show Password" />
                 </MudCardContent>
                 <MudCardActions>
                     @if (!isBusy)
@@ -99,6 +116,25 @@
     private string? errorMessage;
     private bool isBusy = false;
 
+    private bool isShow;
+    private InputType PasswordInput = InputType.Password;
+    private string PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+
+    void ShowPasswordClick()
+    {
+        @if (isShow)
+        {
+            isShow = false;
+            PasswordInputIcon = Icons.Material.Filled.VisibilityOff;
+            PasswordInput = InputType.Password;
+        }
+        else
+        {
+            isShow = true;
+            PasswordInputIcon = Icons.Material.Filled.Visibility;
+            PasswordInput = InputType.Text;
+        }
+    }
 
     private void SetBaseUrl()
     {

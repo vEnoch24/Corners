@@ -98,9 +98,13 @@
             var authState = JsonConverter.Deserialize<AuthResponseDto>(authStateJson);
             AuthenticationState.LoadState(authState);
 
-            if (AuthenticationState.IsAuthenticated)
+            if (AuthenticationState.IsAuthenticated && AuthenticationState.User.Role == "Buyer")
             {
                 NavigationManager.NavigateTo("/dashboard");
+            }
+            else if (AuthenticationState.IsAuthenticated && AuthenticationState.User.Role == "Seller")
+            {
+                NavigationManager.NavigateTo("/seller-dashboard");
             }
         }
 
@@ -111,9 +115,13 @@
     {
         if (e.PropertyName == nameof(AuthenticationState.IsAuthenticated))
         {
-            if (AuthenticationState.IsAuthenticated)
+            if (AuthenticationState.IsAuthenticated && AuthenticationState.User.Role == "Buyer")
             {
                 NavigationManager.NavigateTo("/dashboard");
+            }
+            else if (AuthenticationState.IsAuthenticated && AuthenticationState.User.Role == "Seller")
+            {
+                NavigationManager.NavigateTo("/seller-dashboard");
             }
             else
             {

@@ -1,10 +1,12 @@
 using CornersBackendApi.Data;
+using CornersBackendApi.Dto;
 using CornersBackendApi.Services;
 using CornersBackendApi.Services.EmailService;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -38,11 +40,15 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = false
     };
 })
+.AddCookie()
 .AddGoogle(options =>
 {
-    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
-    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+    options.ClientId = builder.Configuration.GetSection("Authentication:Google:ClientId").Value;
+    options.ClientSecret = builder.Configuration.GetSection("Authentication:Google:ClientSecret").Value;
+    options.CallbackPath = "/google-response";
 });
+
+builder.Services.Configure<GoogleAuthSettingsDto>(builder.Configuration.GetSection("Authentication:Google"));
 
 var app = builder.Build();
 

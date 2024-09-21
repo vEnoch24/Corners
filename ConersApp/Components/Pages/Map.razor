@@ -4,11 +4,8 @@
 <MudDialog>
 
     <DialogContent>
-           <div style="height: 500px; width: 100%;">
-                <iframe src="/wwwroot/google-map.html"
-                        style="height: 500px; width: 100%; border: none;">
-
-                </iframe>
+           <div id="map" style="height: 500px; width: 100%;">
+            
            </div>
     </DialogContent>
 
@@ -30,13 +27,9 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        try
-        {
-            await JS.InvokeVoidAsync("initMap");
-        }
-        catch (Exception ex)
-        {
-
-        }
+        // if(firstRender)
+        // {
+        //     await JS.InvokeVoidAsync("initialize", null);
+        // }
     }
 }
