@@ -14,7 +14,7 @@
 
 <MudGrid Justify="Justify.Center">
     <MudItem Style="margin-bottom: 20px">
-        <MudText Sty Typo="Typo.h3" Align="Align.Center">
+        <MudText  Typo="Typo.h3" Align="Align.Center">
             <b>Welcome back</b>
         </MudText>
         <MudText Typo="Typo.body2" Align="Align.Center">
@@ -279,7 +279,7 @@
                         await ListenForOAuthCallback();
                     }
 
-                   
+
                 }
                 else
                 {
@@ -314,11 +314,108 @@
         // Extract the authorization code from the query string
         var code = request.QueryString["code"];
 
+        var AuthenticationPage = @"
+                        <!DOCTYPE html>
+                        <html lang=""en"">
+                        <head>
+                            <meta charset=""UTF-8"">
+                            <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+                            <title>Authentication Successful</title>
+                            <style>
+                                /* Reset margin and padding for consistency */
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                }
+
+                                /* Modern font styling */
+                                body {
+                                    font-family: 'Roboto', sans-serif;
+                                    background-color: #f4f6f9;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100vh;
+                                    margin: 0;
+                                }
+
+                                /* Container for the message */
+                                .message-container {
+                                    background-color: #fff;
+                                    border-radius: 12px;
+                                    padding: 40px;
+                                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                                    text-align: center;
+                                    max-width: 400px;
+                                    width: 100%;
+                                    transition: all 0.3s ease;
+                                }
+
+                                /* Success icon styling */
+                                .message-container .icon {
+                                    font-size: 60px;
+                                    color: #28a745;
+                                    margin-bottom: 20px;
+                                }
+
+                                /* Main header for the message */
+                                .message-container h1 {
+                                    font-size: 28px;
+                                    color: #333;
+                                    margin-bottom: 16px;
+                                }
+
+                                /* Description paragraph */
+                                .message-container p {
+                                    font-size: 16px;
+                                    color: #666;
+                                    line-height: 1.6;
+                                }
+
+                                /* Button to return to the app */
+                                .message-container a {
+                                    display: inline-block;
+                                    margin-top: 20px;
+                                    padding: 12px 24px;
+                                    background-color: #007bff;
+                                    color: #fff;
+                                    text-decoration: none;
+                                    border-radius: 8px;
+                                    font-size: 16px;
+                                    transition: background-color 0.3s ease;
+                                }
+
+                                /* Hover effect for the button */
+                                .message-container a:hover {
+                                    background-color: #0056b3;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <div class=""message-container"">
+                                <!-- Success Icon (Optional, can be replaced with an actual icon or image) -->
+                                <div class=""icon"">✔</div>
+        
+                                <!-- Authentication Success Message -->
+                                <h1>Authentication Successful</h1>
+                                <p>You have successfully authenticated. You can now close this window or return to the app.</p>
+        
+                                <!-- Button to go back to the app -->
+                                <a href=""corners://open"">Back to App</a>
+                            </div>
+                        </body>
+                        </html>";
+
         // Respond to the browser that authentication was successful
-        var responseString = "<html><body>Authentication successful. You can close this window.</body></html>";
+        var responseString = AuthenticationPage;
         var buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+
+        context.Response.ContentType = "text/html";
         context.Response.ContentLength64 = buffer.Length;
         await context.Response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+
+        await context.Response.OutputStream.FlushAsync();
         context.Response.OutputStream.Close();
 
         listener.Stop();
@@ -350,12 +447,12 @@
             if (response.IsSuccessStatusCode)
             {
                 var tokenResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleTokenResponse>(responseString);
-                // Handle the access token
-                //Console.WriteLine($"Access Token: {tokenResponse.AccessToken}");
 
-                Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
-                Snackbar.Configuration.ShowTransitionDuration = 100;
-                Snackbar.Add($"Access Token: {tokenResponse.AccessToken}", Severity.Success);
+                await GetUserDetails(tokenResponse.AccessToken);
+
+                // Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                // Snackbar.Configuration.ShowTransitionDuration = 100;
+                // Snackbar.Add($"Access Token: {tokenResponse.AccessToken}", Severity.Success);
             }
             else
             {
@@ -368,6 +465,82 @@
                 Snackbar.Add(errorMessage, Severity.Error);
             }
         }
+    }
+
+    private async Task GetUserDetails(string accessToken)
+    {
+        using (var client = new HttpClient())
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://www.googleapis.com/oauth2/v3/userinfo");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+
+            var response = await client.SendAsync(request);
+            var responseString = await response.Content.ReadAsStringAsync();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var userInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleUserInfo>(responseString);
+
+                await StoreGoogleUser(userInfo);
+            }
+            else
+            {
+                throw new Exception("Failed to retrieve user info from Google");
+            }
+        }
+    }
+
+    private async Task StoreGoogleUser(GoogleUserInfo googleUser)
+    {
+
+        try
+        {
+            SetBaseUrl();
+            var customSerialization = new Dictionary<string, string>
+            {
+                { "Email", googleUser.Email },
+                { "FirstName", googleUser.FirstName },
+                { "LastName", googleUser.LastName },
+            };
+
+            using (var client = new HttpClient())
+            {
+                var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(customSerialization);
+                var response = await client.PostAsync($"{_baseUrl}api/Account/store-google-user", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var contentStr = await response.Content.ReadAsStringAsync();
+                    var authResponse = JsonConverter.Deserialize<AuthResponseDto>(contentStr);
+
+                    var serialized = JsonConverter.Serialize(authResponse);
+                    await SecureStorage.SetAsync(AuthenticationState.AuthStoreKey, serialized);
+
+                    AuthenticationState.LoadState(authResponse);
+                }
+                else
+                {
+                   
+                    errorMessage = await response.Content.ReadAsStringAsync();
+
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add(errorMessage, Severity.Error);
+
+                    //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
+        }
+
     }
 
 }

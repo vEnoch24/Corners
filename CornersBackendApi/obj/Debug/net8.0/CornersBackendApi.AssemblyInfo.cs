@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CornersBackendApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c5e95d666a9e29e179e8319e10af586774c9991")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+291682c0f4170d8ff018135dfcb96eea4eac9e8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CornersBackendApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CornersBackendApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

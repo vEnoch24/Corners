@@ -141,3 +141,4 @@ C:\Users\Enoch\source\repos\MauiApp2\CornersBackendApi\obj\Debug\net8.0\refint\C
 C:\Users\Enoch\source\repos\MauiApp2\CornersBackendApi\obj\Debug\net8.0\CornersBackendApi.pdb
 C:\Users\Enoch\source\repos\MauiApp2\CornersBackendApi\obj\Debug\net8.0\CornersBackendApi.genruntimeconfig.cache
 C:\Users\Enoch\source\repos\MauiApp2\CornersBackendApi\obj\Debug\net8.0\ref\CornersBackendApi.dll
+C:\Users\Enoch\source\repos\MauiApp2\CornersBackendApi\bin\Debug\net8.0\Newtonsoft.Json.dll

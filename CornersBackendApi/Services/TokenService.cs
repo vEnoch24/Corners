@@ -48,7 +48,8 @@ namespace CornersBackendApi.Services
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.NameIdentifier, seller.Id.ToString()),
-                new Claim(ClaimTypes.Name, seller.Name),
+                new Claim(ClaimTypes.Name, seller.FirstName),
+                new Claim(ClaimTypes.Name, seller.LastName),
                 new Claim(ClaimTypes.Email, seller.Email),
             };
 

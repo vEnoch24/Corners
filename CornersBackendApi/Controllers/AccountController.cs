@@ -17,6 +17,7 @@ using CornersBackendApi.Data.Models.SellerModels;
 using System.Text;
 using static System.Net.WebRequestMethods;
 using Microsoft.Extensions.Options;
+using System.Threading;
 
 namespace CornersBackendApi.Controllers
 {
@@ -181,10 +182,10 @@ namespace CornersBackendApi.Controllers
         {
             var clientId = _configuration.GetSection("Authentication:Google:ClientId").Value; // Read from configuration
             //var redirectUri = "https://localhost:44365/signin-google"; // Example: "com.companyname.app:/auth";
-            var redirectUri = "http://localhost:5000/authcallback/"; // Example: "com.companyname.app:/auth";
+            var redirectUri = "http://localhost:5000/authcallback/";
 
             var googleUrl = "https://accounts.google.com/o/oauth2/auth" +
-                            $"?scope=https%3A//www.googleapis.com/auth/drive.metadata.readonly&" +
+                            $"?scope=openid email profile&" +
                             $"access_type=offline&" +
                             $"include_granted_scopes=true&" +
                             $"response_type=code&" +
@@ -192,6 +193,30 @@ namespace CornersBackendApi.Controllers
                             $"&redirect_uri={redirectUri}" ;
 
             return Ok(new { url = googleUrl });
+        }
+
+        [HttpPost("store-google-user")]
+        public async Task<IActionResult> StoreGoolgeUser(GoogleUserInfo googleUser, CancellationToken cancellationToken)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email ==  googleUser.Email);
+
+            if (user == null)
+            {
+                user = new User
+                {
+                    Email = googleUser.Email,
+                    FirstName = googleUser.FirstName,
+                    LastName = googleUser.LastName,
+                    DateAdded = DateTime.UtcNow,
+                    VerifiedAt = DateTime.UtcNow,
+                };
+
+                await _context.Users.AddAsync(user, cancellationToken);
+                await _context.SaveChangesAsync(cancellationToken);
+            }
+
+
+            return Ok(GenerateToken(user));
         }
 
         [HttpGet("google-response")]

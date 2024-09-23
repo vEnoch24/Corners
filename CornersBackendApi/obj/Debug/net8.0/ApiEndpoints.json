@@ -184,6 +184,22 @@
   },
   {
     "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "Method": "StoreGoolgeUser",
+    "RelativePath": "api/Account/store-google-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "googleUser",
+        "Type": "CornersBackendApi.Dto.GoogleUserInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.AccountController",
     "Method": "Verify",
     "RelativePath": "api/Account/verify-otp",
     "HttpMethod": "POST",
@@ -199,9 +215,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "Login",
-    "RelativePath": "api/BuinessAccount/business-login",
+    "RelativePath": "api/BusinessAccount/business-login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -215,9 +231,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "ForgotPassword",
-    "RelativePath": "api/BuinessAccount/forgot-password",
+    "RelativePath": "api/BusinessAccount/forgot-password",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -231,9 +247,39 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "Method": "GetGoogleAuthSettings",
+    "RelativePath": "api/BusinessAccount/google-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "Method": "GoogleResponse",
+    "RelativePath": "api/BusinessAccount/google-response",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "Method": "GoogleMauiLogin",
+    "RelativePath": "api/BusinessAccount/maui-signin-google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "RegisterBusiness",
-    "RelativePath": "api/BuinessAccount/register-business",
+    "RelativePath": "api/BusinessAccount/register-business",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -247,9 +293,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "ResetPassword",
-    "RelativePath": "api/BuinessAccount/reset-password",
+    "RelativePath": "api/BusinessAccount/reset-password",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -263,9 +309,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "SendPasswordResetEmail",
-    "RelativePath": "api/BuinessAccount/send-passwordreset-mail",
+    "RelativePath": "api/BusinessAccount/send-passwordreset-mail",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -284,9 +330,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "SendVerificationEmail",
-    "RelativePath": "api/BuinessAccount/send-verification-mail",
+    "RelativePath": "api/BusinessAccount/send-verification-mail",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -300,9 +346,35 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BuinessAccountController",
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "Method": "GoogleLogin",
+    "RelativePath": "api/BusinessAccount/signin-google",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "Method": "StoreGoolgeUser",
+    "RelativePath": "api/BusinessAccount/store-google-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "googleUser",
+        "Type": "CornersBackendApi.Dto.GoogleUserInfo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
     "Method": "Verify",
-    "RelativePath": "api/BuinessAccount/verify-otp",
+    "RelativePath": "api/BusinessAccount/verify-otp",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

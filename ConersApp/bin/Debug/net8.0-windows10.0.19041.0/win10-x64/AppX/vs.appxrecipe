@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>378B3112E343B505CCDA15B1E34C5C20140AC945538979E9793F74385C1178AB</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>64A84B264949F6504FDB508524A1C6A69937FA0F37E4C57DA73DAA10719A6AF3</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.conersapp_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.conersapp_9zz4h110yvjzm!App</RegisteredUserModeAppID>
     <RegisteredPackageID>com.companyname.conersapp</RegisteredPackageID>
@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-21T03:53:36.482</Modified>
+      <Modified>2024-09-23T20:55:42.369</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-21T03:53:36.162</Modified>
+      <Modified>2024-09-21T16:22:43.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.runtimeconfig.json">
       <PackagePath>ConersApp.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-20T21:30:43.558</Modified>
+      <Modified>2024-09-21T17:07:20.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.dll">
       <PackagePath>ConersApp.dll</PackagePath>
-      <Modified>2024-09-21T03:53:35.189</Modified>
+      <Modified>2024-09-23T20:55:40.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ConersApp.exe</PackagePath>
-      <Modified>2024-09-21T03:53:35.199</Modified>
+      <Modified>2024-09-23T20:55:40.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -315,7 +315,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.deps.json">
       <PackagePath>ConersApp.deps.json</PackagePath>
-      <Modified>2024-09-21T03:53:36.077</Modified>
+      <Modified>2024-09-21T17:07:20.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -1043,7 +1043,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\bin\Debug\net6.0\BackendClassLibrary.dll">
       <PackagePath>BackendClassLibrary.dll</PackagePath>
-      <Modified>2024-09-21T03:00:08.270</Modified>
+      <Modified>2024-09-23T09:43:37.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\bin\Debug\net6.0\RazorClassLibrary1.dll">
       <PackagePath>RazorClassLibrary1.dll</PackagePath>

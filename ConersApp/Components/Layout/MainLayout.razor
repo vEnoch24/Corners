@@ -35,19 +35,19 @@
 <CascadingValue Value="AuthenticationState" Name="AuthenticationState">
     <MudLayout>
         <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" @ref="@_mudThemeProvider" Theme="@_theme" />
-        @*<MudAppBar Dense="false" Elevation="1">
+        <MudAppBar Dense="false" Elevation="1">
 
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudText Typo="Typo.h5" Class="mt-1">Application</MudText>
-        <MudSpacer />
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+            <MudText Typo="Typo.h5" Class="mt-1">Application</MudText>
+            <MudSpacer />
         <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
-        </MudAppBar>*@
+        </MudAppBar>
         @*<MudDrawerContainer Class="mud-height-full">
 
         </MudDrawerContainer>*@
-        <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Never"
+        <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always"
                    Breakpoint="Breakpoint.Sm"
-                   Variant="@DrawerVariant.Mini" OpenMiniOnHover="true" Elevation="2">
+                   Variant="@DrawerVariant.Responsive" OpenMiniOnHover="false" Elevation="2">
             <MudDrawerHeader>
 
             </MudDrawerHeader>

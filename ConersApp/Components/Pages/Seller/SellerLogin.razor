@@ -3,7 +3,11 @@
 @using BackendClassLibrary.Helper
 @using System.Text
 @using BackendClassLibrary.Models
+@using BackendClassLibrary.Models.Seller
 @using ConersApp.State
+@using Newtonsoft.Json.Linq
+@using System.Diagnostics
+@using System.Net
 
 
 @inject IDialogService DialogService;
@@ -51,7 +55,7 @@
                 <MudCard Elevation="5">
                     <MudCardContent>
                         <MudTextField Label="Email" Variant="Variant.Outlined" Class="mt-3"
-                                      @bind-Value="loginModel.Email" For="@(() => loginModel.Email)" />
+                                      @bind-Value="loginModel.BusinessEmail" For="@(() => loginModel.BusinessEmail)" />
                         <MudTextField Label="Password" Variant="Variant.Outlined" Class="mt-3"
                                       @bind-Value="loginModel.Password" For="@(() => loginModel.Password)"
                                       InputType="@PasswordInput" Adornment="Adornment.End"
@@ -89,7 +93,7 @@
                     <MudDivider Class="my-2" />
 
                     <MudText Align="Align.Center">OR</MudText>
-                    <MudButton Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true">
+                    <MudButton OnClick="GoogleLoginAsync" Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true">
                         <MudIcon Icon="@Icons.Custom.Brands.Google" Class="mr-2" /> Continue with Google
                     </MudButton>
                     <MudButton Variant="Variant.Outlined" Color="Color.Primary" Class="mt-2" FullWidth="true">
@@ -111,10 +115,12 @@
     [CascadingParameter(Name = "AuthenticationState")]
     public AuthenticationState AuthenticationState { get; set; }
 
-    private LoginModel loginModel { get; set; } = new();
+    private BusinessLoginModel loginModel { get; set; } = new();
     private string _baseUrl;
     private string? errorMessage;
     private bool isBusy = false;
+    private string clientId;
+    private string clientSecret;
 
     private bool isShow;
     private InputType PasswordInput = InputType.Password;
@@ -148,6 +154,11 @@
         }
     }
 
+    protected override async Task OnInitializedAsync()
+    {
+        await GetGoogleAuthSettings();
+    }
+
     private async Task LoginAsync()
     {
         try
@@ -158,7 +169,7 @@
             using (var client = new HttpClient())
             {
                 var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(loginModel);
-                var response = await client.PostAsync($"{_baseUrl}api/Account/login", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+                var response = await client.PostAsync($"{_baseUrl}api/BusinessAccount/business-login", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -193,6 +204,337 @@
             Snackbar.Add(errorMessage, Severity.Error);
 
             //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+        }
+
+    }
+
+    private async Task GetGoogleAuthSettings()
+    {
+        try
+        {
+            SetBaseUrl();
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync($"{_baseUrl}api/BusinessAccount/google-auth");
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadFromJsonAsync<GoogleAuthResponseModel>();
+                    clientId = result.ClientId;
+                    clientSecret = result.ClientSecret;
+                }
+                else
+                {
+                    errorMessage = "Failed to retrieve Google Auth settings.";
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+    private async Task GoogleLoginAsync()
+    {
+        try
+        {
+            SetBaseUrl();
+
+            // isBusy = true;
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync($"{_baseUrl}api/BusinessAccount/maui-signin-google", null);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    var googleUrl = JObject.Parse(content)["url"].ToString();
+
+
+                    if (DeviceInfo.Platform == DevicePlatform.Android || DeviceInfo.Platform == DevicePlatform.iOS)
+                    {
+                        var authResult = await WebAuthenticator.AuthenticateAsync(
+                        new Uri(googleUrl),
+                        new Uri($"http://localhost:5000/authcallback/")); // The redirect URI
+
+                        // Handle the result, e.g., exchange the authorization code for an access token
+                        if (authResult.Properties.TryGetValue("code", out string code))
+                        {
+                            await ExchangeCodeForToken(code);
+                        }
+                    }
+                    else
+                    {
+                        var psi = new ProcessStartInfo
+                            {
+                                FileName = googleUrl,
+                                UseShellExecute = true
+                            };
+                        Process.Start(psi);
+
+                        await ListenForOAuthCallback();
+                    }
+
+
+                }
+                else
+                {
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add("Google Login Failed", Severity.Error);
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
+        }
+    }
+
+    private async Task ListenForOAuthCallback()
+    {
+        var listener = new HttpListener();
+        listener.Prefixes.Add("http://localhost:5000/authcallback/");
+        listener.Start();
+
+        Console.WriteLine("Waiting for Google OAuth callback...");
+
+        var context = await listener.GetContextAsync();
+        var request = context.Request;
+
+        // Extract the authorization code from the query string
+        var code = request.QueryString["code"];
+
+        var AuthenticationPage = @"
+                        <!DOCTYPE html>
+                        <html lang=""en"">
+                        <head>
+                            <meta charset=""UTF-8"">
+                            <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+                            <title>Authentication Successful</title>
+                            <style>
+                                /* Reset margin and padding for consistency */
+                                * {
+                                    margin: 0;
+                                    padding: 0;
+                                    box-sizing: border-box;
+                                }
+
+                                /* Modern font styling */
+                                body {
+                                    font-family: 'Roboto', sans-serif;
+                                    background-color: #f4f6f9;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100vh;
+                                    margin: 0;
+                                }
+
+                                /* Container for the message */
+                                .message-container {
+                                    background-color: #fff;
+                                    border-radius: 12px;
+                                    padding: 40px;
+                                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                                    text-align: center;
+                                    max-width: 400px;
+                                    width: 100%;
+                                    transition: all 0.3s ease;
+                                }
+
+                                /* Success icon styling */
+                                .message-container .icon {
+                                    font-size: 60px;
+                                    color: #28a745;
+                                    margin-bottom: 20px;
+                                }
+
+                                /* Main header for the message */
+                                .message-container h1 {
+                                    font-size: 28px;
+                                    color: #333;
+                                    margin-bottom: 16px;
+                                }
+
+                                /* Description paragraph */
+                                .message-container p {
+                                    font-size: 16px;
+                                    color: #666;
+                                    line-height: 1.6;
+                                }
+
+                                /* Button to return to the app */
+                                .message-container a {
+                                    display: inline-block;
+                                    margin-top: 20px;
+                                    padding: 12px 24px;
+                                    background-color: #007bff;
+                                    color: #fff;
+                                    text-decoration: none;
+                                    border-radius: 8px;
+                                    font-size: 16px;
+                                    transition: background-color 0.3s ease;
+                                }
+
+                                /* Hover effect for the button */
+                                .message-container a:hover {
+                                    background-color: #0056b3;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <div class=""message-container"">
+                                <!-- Success Icon (Optional, can be replaced with an actual icon or image) -->
+                                <div class=""icon"">✔</div>
+
+                                <!-- Authentication Success Message -->
+                                <h1>Authentication Successful</h1>
+                                <p>You have successfully authenticated. You can now close this window or return to the app.</p>
+
+                                <!-- Button to go back to the app -->
+                                <a href=""corners://open"">Back to App</a>
+                            </div>
+                        </body>
+                        </html>";
+
+        // Respond to the browser that authentication was successful
+        var responseString = AuthenticationPage;
+        var buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+
+        context.Response.ContentType = "text/html";
+        context.Response.ContentLength64 = buffer.Length;
+        await context.Response.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+
+        await context.Response.OutputStream.FlushAsync();
+        context.Response.OutputStream.Close();
+
+        listener.Stop();
+
+        // Now exchange the authorization code for tokens
+        await ExchangeCodeForToken(code);
+    }
+
+    private async Task ExchangeCodeForToken(string code)
+    {
+        var tokenRequestUrl = "https://oauth2.googleapis.com/token";
+
+        var postData = new Dictionary<string, string>
+        {
+            { "client_id", $"{clientId}" },
+            { "client_secret", $"{clientSecret}" },
+            { "code", code },
+            { "redirect_uri", $"http://localhost:5000/authcallback/" },
+            { "grant_type", "authorization_code" }
+        };
+
+        using (var client = new HttpClient())
+        {
+            var content = new FormUrlEncodedContent(postData);
+            var response = await client.PostAsync(tokenRequestUrl, content);
+            var responseString = await response.Content.ReadAsStringAsync();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var tokenResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleTokenResponse>(responseString);
+
+                await GetUserDetails(tokenResponse.AccessToken);
+
+                // Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                // Snackbar.Configuration.ShowTransitionDuration = 100;
+                // Snackbar.Add($"Access Token: {tokenResponse.AccessToken}", Severity.Success);
+            }
+            else
+            {
+                //Console.WriteLine($"Error exchanging code for token: {responseString}");
+
+                errorMessage = $"Error exchanging code for token: {responseString}";
+
+                Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                Snackbar.Configuration.ShowTransitionDuration = 100;
+                Snackbar.Add(errorMessage, Severity.Error);
+            }
+        }
+    }
+
+    private async Task GetUserDetails(string accessToken)
+    {
+        using (var client = new HttpClient())
+        {
+            var request = new HttpRequestMessage(HttpMethod.Get, "https://www.googleapis.com/oauth2/v3/userinfo");
+            request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", accessToken);
+
+            var response = await client.SendAsync(request);
+            var responseString = await response.Content.ReadAsStringAsync();
+
+            if (response.IsSuccessStatusCode)
+            {
+                var userInfo = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleUserInfo>(responseString);
+
+                await StoreGoogleUser(userInfo);
+            }
+            else
+            {
+                throw new Exception("Failed to retrieve user info from Google");
+            }
+        }
+    }
+
+    private async Task StoreGoogleUser(GoogleUserInfo googleUser)
+    {
+
+        try
+        {
+            SetBaseUrl();
+            var customSerialization = new Dictionary<string, string>
+            {
+                { "Email", googleUser.Email },
+                { "FirstName", googleUser.FirstName },
+                { "LastName", googleUser.LastName },
+            };
+
+            using (var client = new HttpClient())
+            {
+                var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(customSerialization);
+                var response = await client.PostAsync($"{_baseUrl}api/BusinessAccount/store-google-user", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var contentStr = await response.Content.ReadAsStringAsync();
+                    var authResponse = JsonConverter.Deserialize<AuthResponseDto>(contentStr);
+
+                    var serialized = JsonConverter.Serialize(authResponse);
+                    await SecureStorage.SetAsync(AuthenticationState.AuthStoreKey, serialized);
+
+                    AuthenticationState.LoadState(authResponse);
+                }
+                else
+                {
+
+                    errorMessage = await response.Content.ReadAsStringAsync();
+
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add(errorMessage, Severity.Error);
+
+                    //await App.Current.MainPage.DisplayAlert("Oops", errorMessage, "OK");
+                }
+            }
+
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
         }
 
     }

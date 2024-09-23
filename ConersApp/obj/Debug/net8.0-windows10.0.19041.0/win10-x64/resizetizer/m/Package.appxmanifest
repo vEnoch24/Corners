@@ -32,6 +32,11 @@
         <uap:Extension Category="windows.protocol">
           <uap:Protocol Name="com.companyname.conersapp" />
         </uap:Extension>
+        <uap:Extension Category="windows.protocol" Executable="App.exe" EntryPoint="Main.App">
+          <uap:Protocol Name="corners" DesiredView="default">
+            <uap:DisplayName>Corners</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
       </Extensions>
     </Application>
   </Applications>
