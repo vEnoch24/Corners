@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-23T20:55:42.369</Modified>
+      <Modified>2024-09-24T00:04:42.210</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ConersApp.dll">
       <PackagePath>ConersApp.dll</PackagePath>
-      <Modified>2024-09-23T20:55:40.413</Modified>
+      <Modified>2024-09-24T00:04:41.162</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ConersApp.exe</PackagePath>
-      <Modified>2024-09-23T20:55:40.521</Modified>
+      <Modified>2024-09-24T00:04:41.180</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\ConersApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -1043,7 +1043,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\BackendClassLibrary\bin\Debug\net6.0\BackendClassLibrary.dll">
       <PackagePath>BackendClassLibrary.dll</PackagePath>
-      <Modified>2024-09-23T09:43:37.468</Modified>
+      <Modified>2024-09-23T21:04:54.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1\bin\Debug\net6.0\RazorClassLibrary1.dll">
       <PackagePath>RazorClassLibrary1.dll</PackagePath>

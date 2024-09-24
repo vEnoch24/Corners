@@ -34,28 +34,37 @@
 <MudThemeProvider />
 <CascadingValue Value="AuthenticationState" Name="AuthenticationState">
     <MudLayout>
-        <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" @ref="@_mudThemeProvider" Theme="@_theme" />
-        <MudAppBar Dense="false" Elevation="1">
+        <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" @ref="@_mudThemeProvider" Theme="@_customTheme" />
+        <MudAppBar class="blurred-appbar" Dense="false" Elevation="0">
 
-            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-            <MudText Typo="Typo.h5" Class="mt-1">Application</MudText>
+             <MudBreakpointProvider @ref="@breakpointProvider" OnBreakpointChanged="OnBreakpointChanged">
+                @if (_isMobileView)
+                {
+                    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+                }
+            </MudBreakpointProvider>
+
+            @* <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" /> *@
+            <MudText Typo="Typo.h4" Class="mt-1">Corners</MudText>
             <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" />
+            @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
+            <MudIconButton Icon="@(_isDarkMode ? Icons.Material.Outlined.DarkMode : Icons.Material.Outlined.LightMode)"
+                       Color="Color.Default"
+                       Class="ma-4"
+                       @onclick="ToggleDarkMode" />
         </MudAppBar>
         @*<MudDrawerContainer Class="mud-height-full">
 
         </MudDrawerContainer>*@
         <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always"
-                   Breakpoint="Breakpoint.Sm"
-                   Variant="@DrawerVariant.Responsive" OpenMiniOnHover="false" Elevation="2">
-            <MudDrawerHeader>
+                   Breakpoint="Breakpoint.Md"
+                   Variant="@DrawerVariant.Responsive" OpenMiniOnHover="false" Elevation="0">
+            <MudNavMenu class="nav-menu" Rounded="true" Margin="Margin.Normal" Color="Color.Success" Bordered="true">
 
-            </MudDrawerHeader>
-            <MudNavMenu Rounded="true" Margin="Margin.Normal" Color="Color.Success" Bordered="true">
-
-                <MudNavLink Href="/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
-                <MudNavLink Href="/order" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCart">Orders</MudNavLink>
-                <MudNavLink Href="/checkout" Match=" NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCartCheckout">Checkout</MudNavLink>
+                <MudNavLink Href="/seller-dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Dashboard" class="nav-link-box-shadow">Dashboard</MudNavLink>
+                <MudNavLink Href="/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" class="nav-link-box-shadow">Home</MudNavLink>
+                <MudNavLink Href="/order" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCart" class="nav-link-box-shadow">Orders</MudNavLink>
+                <MudNavLink Href="/checkout" Match=" NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCartCheckout" class="nav-link-box-shadow">Checkout</MudNavLink>
             </MudNavMenu>
             @* <NavMenu/>*@
         </MudDrawer>
@@ -64,17 +73,36 @@
             <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="margin-top: 20px;">
                 @Body
             </MudContainer>
+            <MudContainer>
+                 copyright 2024
+            </MudContainer>
         </MudMainContent>
 
-        <MudContainer>
-            copyright 2024
-        </MudContainer>
+        
     </MudLayout>
 </CascadingValue>
 
+<style>
+    .nav-menu {
+        overflow-x: hidden;
+    }
+
+    .nav-link-box-shadow:hover {
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.1); */
+        transition: all 0.2s ease-in-out;
+        transform: scale(1.08);
+    }
+
+    .blurred-appbar {
+        backdrop-filter: blur(10px); /* Adjust the amount of blur */
+        -webkit-backdrop-filter: blur(10px); /* Safari Support */
+    }
+</style>
 
 @code {
-    bool _drawerOpen = false;
+    private MudBreakpointProvider breakpointProvider;
+    private bool _isMobileView;
+    bool _drawerOpen = true;
 
     private MudTheme _theme = new();
     private MudThemeProvider? _mudThemeProvider;
@@ -85,16 +113,76 @@
         _drawerOpen = !_drawerOpen;
     }
 
+    private void ToggleDarkMode()
+    {
+        _isDarkMode = !_isDarkMode;
+    }
+
+    private void OnBreakpointChanged(Breakpoint breakpoint)
+    {
+        _isMobileView = breakpoint <= Breakpoint.Sm;
+    }
+
     public AuthenticationState AuthenticationState { get; set; } = new();
 
+
+    MudTheme _customTheme = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            Primary = "#1DB954", // Spotify Green
+            Secondary = "#6A6A6A", // Dark Gray for secondary text
+            Background = "#FFFFFF", // White background for light mode
+                AppbarBackground = "rgba(255, 255, 255, 0.5)", // White background for the AppBar in light mode
+            Surface = "#F5F5F5", // Light gray surface color for light mode
+            TextPrimary = "#191414", // Black primary text color
+            TextSecondary = "#6A6A6A", // Dark gray secondary text
+            AppbarText = "#191414", // Black text for AppBar
+            Error = "#E91429" // Error color (Spotify red)
+        },
+
+        PaletteDark = new PaletteDark()
+        {
+                Primary = "#1ED760", // Spotify Green
+                Secondary = "#FFFFFF", // Light Gray for secondary text
+                Background = "#121212", // Dark charcoal background for dark mode
+                AppbarBackground = "rgba(18, 18, 18, 0.8)", // Dark background for the AppBar in dark mode
+            Surface = "#282828", // Darker gray surface color for dark mode
+            TextPrimary = "#FFFFFF", // White primary text color
+            TextSecondary = "#B3B3B3", // Light gray secondary text
+            AppbarText = "#FFFFFF", // White text for AppBar
+                DrawerBackground = "#121212",
+            Error = "#E91429" // Error color (Spotify red)
+        },
+
+        LayoutProperties = new LayoutProperties()
+        {
+            DrawerWidthLeft = "200px",
+        },
+
+        Typography = new Typography()
+        {
+            Default = new Default()
+            {
+                FontFamily = new[] { "Poppins", "Helvetica", "Arial", "sans-serif" }
+            },
+
+            H4 = new H4()
+            {
+                FontSize = "2rem",
+                FontWeight = 900,
+
+            }
+        }
+    };
 
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            //_isDarkMode = await _mudThemeProvider.GetSystemPreference();
-            _isDarkMode = false;
+            _isDarkMode = await _mudThemeProvider.GetSystemPreference();
+            // _isDarkMode = false;
             StateHasChanged();
 
         }
