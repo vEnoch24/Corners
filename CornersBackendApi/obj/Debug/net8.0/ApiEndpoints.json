@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "ForgotPassword",
     "RelativePath": "api/Account/forgot-password",
     "HttpMethod": "PATCH",
@@ -9,14 +9,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.ForgotPasswordRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.ForgotPasswordRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "GetUser",
     "RelativePath": "api/Account/get-user/{Email}",
     "HttpMethod": "GET",
@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "GetGoogleAuthSettings",
     "RelativePath": "api/Account/google-auth",
     "HttpMethod": "GET",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "GoogleResponse",
     "RelativePath": "api/Account/google-response",
     "HttpMethod": "GET",
@@ -52,7 +52,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/login",
     "HttpMethod": "POST",
@@ -61,14 +61,14 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "CornersBackendApi.Dto.LoginDto",
+        "Type": "CornersBackendApi.src.Application.Dto.LoginDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "GoogleMauiLogin",
     "RelativePath": "api/Account/maui-signin-google",
     "HttpMethod": "POST",
@@ -78,7 +78,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "Register",
     "RelativePath": "api/Account/register",
     "HttpMethod": "POST",
@@ -87,14 +87,14 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "CornersBackendApi.Dto.RegisterDto",
+        "Type": "CornersBackendApi.src.Application.Dto.RegisterDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "ResetPassword",
     "RelativePath": "api/Account/reset-password",
     "HttpMethod": "PATCH",
@@ -103,14 +103,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.ResetPasswordRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.ResetPasswordRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "SendMail",
     "RelativePath": "api/Account/send-mail",
     "HttpMethod": "POST",
@@ -119,7 +119,7 @@
     "Parameters": [
       {
         "Name": "mailData",
-        "Type": "CornersBackendApi.Dto.EmailDto",
+        "Type": "CornersBackendApi.src.Application.Dto.EmailDto",
         "IsRequired": true
       }
     ],
@@ -136,7 +136,7 @@
     ]
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "SendPasswordResetEmail",
     "RelativePath": "api/Account/send-passwordreset-mail",
     "HttpMethod": "POST",
@@ -157,7 +157,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "SendVerificationEmail",
     "RelativePath": "api/Account/send-verification-mail",
     "HttpMethod": "POST",
@@ -166,14 +166,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.EmailVerificationRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.EmailVerificationRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "GoogleLogin",
     "RelativePath": "api/Account/signin-google",
     "HttpMethod": "POST",
@@ -183,7 +183,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "StoreGoolgeUser",
     "RelativePath": "api/Account/store-google-user",
     "HttpMethod": "POST",
@@ -192,14 +192,14 @@
     "Parameters": [
       {
         "Name": "googleUser",
-        "Type": "CornersBackendApi.Dto.GoogleUserInfo",
+        "Type": "CornersBackendApi.src.Application.Dto.GoogleUserInfo",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.AccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.AccountController",
     "Method": "Verify",
     "RelativePath": "api/Account/verify-otp",
     "HttpMethod": "POST",
@@ -208,14 +208,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.OtpVerificationRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.OtpVerificationRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "Login",
     "RelativePath": "api/BusinessAccount/business-login",
     "HttpMethod": "POST",
@@ -224,14 +224,14 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "CornersBackendApi.Dto.SellerDtos.LoginBusinessDto",
+        "Type": "CornersBackendApi.src.Application.Dto.SellerDtos.LoginBusinessDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "ForgotPassword",
     "RelativePath": "api/BusinessAccount/forgot-password",
     "HttpMethod": "PATCH",
@@ -240,14 +240,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.ForgotPasswordRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.ForgotPasswordRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "GetGoogleAuthSettings",
     "RelativePath": "api/BusinessAccount/google-auth",
     "HttpMethod": "GET",
@@ -257,7 +257,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "GoogleResponse",
     "RelativePath": "api/BusinessAccount/google-response",
     "HttpMethod": "GET",
@@ -267,7 +267,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "GoogleMauiLogin",
     "RelativePath": "api/BusinessAccount/maui-signin-google",
     "HttpMethod": "POST",
@@ -277,7 +277,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "RegisterBusiness",
     "RelativePath": "api/BusinessAccount/register-business",
     "HttpMethod": "POST",
@@ -286,14 +286,14 @@
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "CornersBackendApi.Dto.SellerDtos.RegisterBusinessDto",
+        "Type": "CornersBackendApi.src.Application.Dto.SellerDtos.RegisterBusinessDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "ResetPassword",
     "RelativePath": "api/BusinessAccount/reset-password",
     "HttpMethod": "PATCH",
@@ -302,14 +302,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.ResetPasswordRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.ResetPasswordRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "SendPasswordResetEmail",
     "RelativePath": "api/BusinessAccount/send-passwordreset-mail",
     "HttpMethod": "POST",
@@ -330,7 +330,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "SendVerificationEmail",
     "RelativePath": "api/BusinessAccount/send-verification-mail",
     "HttpMethod": "POST",
@@ -339,14 +339,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.EmailVerificationRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.EmailVerificationRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "GoogleLogin",
     "RelativePath": "api/BusinessAccount/signin-google",
     "HttpMethod": "POST",
@@ -356,7 +356,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "StoreGoolgeUser",
     "RelativePath": "api/BusinessAccount/store-google-user",
     "HttpMethod": "POST",
@@ -365,14 +365,14 @@
     "Parameters": [
       {
         "Name": "googleUser",
-        "Type": "CornersBackendApi.Dto.GoogleUserInfo",
+        "Type": "CornersBackendApi.src.Application.Dto.GoogleUserInfo",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.BusinessAccountController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "Verify",
     "RelativePath": "api/BusinessAccount/verify-otp",
     "HttpMethod": "POST",
@@ -381,14 +381,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "CornersBackendApi.RequestPayload.OtpVerificationRequest",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.OtpVerificationRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CornersBackendApi.Controllers.WeatherForecastController",
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
     "HttpMethod": "GET",

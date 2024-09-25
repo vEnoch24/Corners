@@ -1,7 +1,8 @@
-using CornersBackendApi.Data;
-using CornersBackendApi.Dto;
-using CornersBackendApi.Services;
-using CornersBackendApi.Services.EmailService;
+using CornersBackendApi.src.Application.Dto;
+using CornersBackendApi.src.Application.Services;
+using CornersBackendApi.src.Application.Services.EmailService;
+using CornersBackendApi.src.Domain.Contracts;
+using CornersBackendApi.src.Infrastructure.Persistence.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
