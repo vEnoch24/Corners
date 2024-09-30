@@ -1,0 +1,145 @@
+﻿@using BackendClassLibrary.Dto
+@using BackendClassLibrary.Helper
+@using BackendClassLibrary.RequestPayload
+@using System.Text
+@using ConersApp.State
+
+@inject IDialogService DialogService;
+@inject ISnackbar Snackbar;
+@inject NavigationManager navigationManager;
+
+
+<EditForm Model="@updateBusinesss" OnValidSubmit="UpdateBusiness">
+    <DataAnnotationsValidator />
+    <MudGrid Justify="Justify.Center" Style="margin-top: 10px">
+
+        <MudItem xs="12" sm="8">
+            
+                <MudCard Elevation="3">
+                    <MudCardContent>
+                        <MudTextField Required="true" Label="Business Name" Variant="Variant.Outlined" Class="mt-3"
+                                      @bind-Value="updateBusinesss.BusinessName" For="@(() => updateBusinesss.BusinessName)" />
+                        <MudTextField Required="true" Label="Business Location" Variant="Variant.Outlined" Class="mt-3"
+                                      @bind-Value="updateBusinesss.BusinessLocation"
+                                      For="@(() => updateBusinesss.BusinessLocation)"
+                                      />
+                        <MudTextField Label="Phone Number" Variant="Variant.Outlined" Class="mt-3"
+                                      @bind-Value="updateBusinesss.BusinessPhoneNumber" For="@(() => updateBusinesss.BusinessPhoneNumber)"
+                                        Mask="@(new PatternMask("000 0000 0000"))" />
+                    </MudCardContent>
+                    <MudCardActions>
+    
+                        @if (!isBusy)
+                        {
+                            <MudButton OnClick="UpdateBusiness"
+                                       Variant="Variant.Filled"
+                                       Color="Color.Primary"
+                                       Class="ml-auto">
+                                Submit
+                            </MudButton>
+                        }
+                        else
+                        {
+                            <MudButton ButtonType="ButtonType.Submit"
+                                       Variant="Variant.Filled"
+                                       Color="Color.Primary"
+                                       Class="ml-auto"
+                                       Disabled=true>
+                                <MudProgressCircular Color="Color.Default" Size="Size.Small" Style="margin-right: 8px" Indeterminate="true" />
+                                Submit
+                            </MudButton>
+                        }
+
+                    </MudCardActions>
+                </MudCard>
+          
+        </MudItem>
+
+    </MudGrid>
+</EditForm>
+
+@code {
+    [CascadingParameter(Name = "AuthenticationState")]
+    public AuthenticationState AuthenticationState { get; set; }
+
+    [Parameter]
+    public EventCallback<bool> OnBusinessRegistered { get; set; }
+
+
+    private bool isBusy = false;
+    private bool isRegistered = false;
+
+    private string _baseUrl;
+    private string? errorMessage;
+
+    private UpdateBusinesssRequest updateBusinesss = new();
+
+    private void SetBaseUrl()
+    {
+        if (DeviceInfo.Platform == DevicePlatform.Android)
+        {
+            _baseUrl = "http://10.0.2.2:44365/";
+        }
+        else
+        {
+            _baseUrl = "https://localhost:44365/";
+        }
+    }
+
+    private async Task UpdateBusiness()
+    {
+        try
+        {
+            SetBaseUrl();
+            isBusy = true;
+
+            var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
+            var authState = JsonConverter.Deserialize<AuthResponseDto>(authStateJson);
+
+            var model = new UpdateBusinesssRequest
+                {
+                    Id = authState.User.Id,
+                    BusinessName = updateBusinesss.BusinessName,
+                    BusinessLocation = updateBusinesss.BusinessLocation,
+                    BusinessPhoneNumber = updateBusinesss.BusinessPhoneNumber
+                };
+
+            using (var client = new HttpClient())
+            {
+                var serializedStr = Newtonsoft.Json.JsonConvert.SerializeObject(model);
+                var response = await client.PatchAsync($"{_baseUrl}api/BusinessAccount/update-business", new StringContent(serializedStr, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    isRegistered = true;
+                    await SecureStorage.SetAsync("businessRegistered", isRegistered.ToString());
+                    await OnBusinessRegistered.InvokeAsync(true);
+                    StateHasChanged();
+                    isBusy = false;
+                }
+                else
+                {
+                    errorMessage = await response.Content.ReadAsStringAsync();
+                    ShowError(errorMessage);
+                    isBusy = false;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+            ShowError(errorMessage);
+        }
+        finally
+        {
+            isBusy = false;
+        }
+    }
+
+    private void ShowError(string message)
+    {
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+        Snackbar.Configuration.ShowTransitionDuration = 100;
+        Snackbar.Add(message, Severity.Error);
+    }
+}

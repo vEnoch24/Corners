@@ -604,7 +604,7 @@
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\microsoft.windowsappsdk\1.5.240607001\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\mudblazor\7.7.0\lib\net8.0\MudBlazor.dll">
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\mudblazor\7.8.0\lib\net8.0\MudBlazor.dll">
       <PackagePath>MudBlazor.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
@@ -916,10 +916,10 @@
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\blazorise\1.6.0\staticwebassets\vendors\sha512.js">
       <PackagePath>wwwroot\_content\Blazorise\vendors\sha512.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\mudblazor\7.7.0\staticwebassets\MudBlazor.min.css">
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\mudblazor\7.8.0\staticwebassets\MudBlazor.min.css">
       <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\mudblazor\7.7.0\staticwebassets\MudBlazor.min.js">
+    <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\mudblazor\7.8.0\staticwebassets\MudBlazor.min.js">
       <PackagePath>wwwroot\_content\MudBlazor\MudBlazor.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Enoch\.nuget\packages\syncfusion.blazor.buttons\26.2.13\staticwebassets\scripts\sf-floating-action-button.min.js">

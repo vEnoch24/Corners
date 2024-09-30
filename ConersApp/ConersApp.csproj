@@ -63,7 +63,7 @@
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-        <PackageReference Include="MudBlazor" Version="7.7.0" />
+        <PackageReference Include="MudBlazor" Version="7.8.0" />
         <PackageReference Include="Syncfusion.Blazor.Inputs" Version="26.2.13" />
         <PackageReference Include="Syncfusion.Blazor.Themes" Version="26.2.13" />
     </ItemGroup>

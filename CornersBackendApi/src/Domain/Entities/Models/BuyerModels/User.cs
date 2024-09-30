@@ -24,5 +24,7 @@ namespace CornersBackendApi.src.Domain.Entities.Models.BuyerModels
         public string? PasswordRestToken { get; set; }
         public DateTime? ResetTokenExpires { get; set; }
 
+
+        public ICollection<Order> Orders { get; set; }
     }
 }

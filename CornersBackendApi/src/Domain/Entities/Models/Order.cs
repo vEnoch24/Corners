@@ -8,11 +8,13 @@ namespace CornersBackendApi.src.Domain.Entities.Models
     public class Order
     {
         public string Id { get; set; } = Guid.NewGuid().ToString();
-        public List<Products> Products { get; set; }
         public OrderFufillment Fufillment { get; set; } = OrderFufillment.Pending;
         public DateTime DateOrdered { get; set; }
 
         [ForeignKey(nameof(User.Id))]
         public string UserId { get; set; }
+        public User User { get; set; }
+
+        public ICollection<OrderProduct> OrderProducts { get; set; }
     }
 }

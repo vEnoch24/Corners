@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NwgGU+bjA1IZR6ZLH+snyg2Btnbc3Ej7iJQD+pKag54=",
+  "Hash": "pEBPe8npxeHxj+HhwVI8jxbnwLZybX5Z5eO25bEbIW8=",
   "Source": "ConersApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\blazorise\\1.6.0\\staticwebassets\\vendors\\sha512.js"
     },
     {
-      "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.7.0\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.7.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -774,13 +774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.7.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.7.0\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.7.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -793,7 +793,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.7.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
       "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\syncfusion.blazor.buttons\\26.2.13\\staticwebassets\\scripts\\sf-floating-action-button.min.js",

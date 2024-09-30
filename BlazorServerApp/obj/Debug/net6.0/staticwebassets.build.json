@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8pJ58w5b7pyQUuugUUvBKCYM2k9nQb6ght6eOYvj8gc=",
+  "Hash": "lFak2DScRxm2V6p/pZbapADqW/4hWLw4R3vtvMAox0I=",
   "Source": "BlazorServerApp",
   "BasePath": "_content/BlazorServerApp",
   "Mode": "Default",
@@ -35,6 +35,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.css",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.js",
+      "SourceId": "MudBlazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\",
+      "BasePath": "_content/MudBlazor",
+      "RelativePath": "MudBlazor.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Enoch\\.nuget\\packages\\mudblazor\\7.8.0\\staticwebassets\\MudBlazor.min.js"
+    },
     {
       "Identity": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BlazorServerApp\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorServerApp.styles.css",
       "SourceId": "BlazorServerApp",

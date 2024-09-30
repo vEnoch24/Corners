@@ -248,6 +248,32 @@
   },
   {
     "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
+    "Method": "GetBusinessDetails",
+    "RelativePath": "api/BusinessAccount/get-business-details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CornersBackendApi.src.Application.Dto.BusinessDetailsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "GetGoogleAuthSettings",
     "RelativePath": "api/BusinessAccount/google-auth",
     "HttpMethod": "GET",
@@ -373,6 +399,22 @@
   },
   {
     "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
+    "Method": "UpdateBusiness",
+    "RelativePath": "api/BusinessAccount/update-business",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CornersBackendApi.src.Application.RequestPayload.UpdateBusinessRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.BusinessAccountController",
     "Method": "Verify",
     "RelativePath": "api/BusinessAccount/verify-otp",
     "HttpMethod": "POST",
@@ -386,6 +428,73 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.SellerController",
+    "Method": "AddProduct",
+    "RelativePath": "api/Seller/add-product",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SellerId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Categories",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Images",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CornersBackendApi.src.Presentation.Controllers.SellerController",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/Seller/get-products",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SellerId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CornersBackendApi.src.Domain.Entities.Models.SellerModels.Products, CornersBackendApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "CornersBackendApi.src.Presentation.Controllers.WeatherForecastController",

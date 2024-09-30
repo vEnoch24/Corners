@@ -13,10 +13,15 @@ namespace CornersBackendApi.src.Application.Repository
             _context = context;
         }
 
-        public async Task<T> Create(T entity)
+        public async Task<T> Add(T entity)
         {
             await _context.AddAsync(entity);
             return entity;
+        }
+
+        public async Task AddRange(IEnumerable<T> entities)
+        {
+            await _context.AddRangeAsync(entities);
         }
 
         public async Task Delete(T entity)

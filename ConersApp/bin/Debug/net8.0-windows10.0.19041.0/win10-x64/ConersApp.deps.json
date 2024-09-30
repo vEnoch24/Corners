@@ -15,7 +15,7 @@
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.Maui.Controls": "8.0.72",
           "Microsoft.Maui.Controls.Compatibility": "8.0.72",
-          "MudBlazor": "7.7.0",
+          "MudBlazor": "7.8.0",
           "RazorClassLibrary1": "1.0.0",
           "Syncfusion.Blazor.Inputs": "26.2.13",
           "Syncfusion.Blazor.Themes": "26.2.13",
@@ -1604,7 +1604,7 @@
           }
         }
       },
-      "MudBlazor/7.7.0": {
+      "MudBlazor/7.8.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "8.0.8",
           "Microsoft.AspNetCore.Components.Web": "8.0.8",
@@ -1612,8 +1612,8 @@
         },
         "runtime": {
           "lib/net8.0/MudBlazor.dll": {
-            "assemblyVersion": "7.7.0.0",
-            "fileVersion": "7.7.0.0"
+            "assemblyVersion": "7.8.0.0",
+            "fileVersion": "7.8.0.0"
           }
         }
       },
@@ -2805,7 +2805,8 @@
       },
       "RazorClassLibrary1/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components.Web": "8.0.8"
+          "Microsoft.AspNetCore.Components.Web": "8.0.8",
+          "MudBlazor": "7.8.0"
         },
         "runtime": {
           "RazorClassLibrary1.dll": {
@@ -3667,12 +3668,12 @@
       "path": "microsoft.windowsappsdk/1.5.240607001",
       "hashPath": "microsoft.windowsappsdk.1.5.240607001.nupkg.sha512"
     },
-    "MudBlazor/7.7.0": {
+    "MudBlazor/7.8.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ISQ0tjiGKfaUg0IUX1I17r0jm0HAlKJZJmzIdrB7qVIdGYQTJ42WoDumweVZI7mlsCNSpoGrHVGojr3b8En00w==",
-      "path": "mudblazor/7.7.0",
-      "hashPath": "mudblazor.7.7.0.nupkg.sha512"
+      "sha512": "sha512-DivLaZKVkL4z8jVeqa1P2n3u5Dny8l/K1nCLrzp8hI+efdE2Rd1KDkMqoaGdjgV9jCEJ3D35r1+/w6V4yPzuaw==",
+      "path": "mudblazor/7.8.0",
+      "hashPath": "mudblazor.7.8.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

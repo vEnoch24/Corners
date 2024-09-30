@@ -47,11 +47,33 @@
             @* <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" /> *@
             <MudText Typo="Typo.h4" Class="mt-1">Corners</MudText>
             <MudSpacer />
+
+           <MudTextField @bind-Value="Search" 
+              Label="Search" 
+              Variant="Variant.Outlined" 
+              Adornment="Adornment.End" 
+              AdornmentIcon="@Icons.Material.Filled.Search" 
+              AdornmentColor="Color.Secondary"
+              Dense="true"
+              Margin="Margin.Dense"
+              Class="custom-textfield" />
             @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
             <MudIconButton Icon="@(_isDarkMode ? Icons.Material.Outlined.DarkMode : Icons.Material.Outlined.LightMode)"
                        Color="Color.Default"
                        Class="ma-4"
                        @onclick="ToggleDarkMode" />
+            <MudMenu>
+                <ActivatorContent>
+                    <MudAvatar>
+                        @* <MudImage Src="images/toiletvisit.jpg" /> *@
+                        M
+                    </MudAvatar>
+                </ActivatorContent>
+                <ChildContent>
+                    <MudMenuItem Icon="@Icons.Material.Filled.Person">Profile</MudMenuItem>
+                    <MudMenuItem Icon="@Icons.Material.Filled.Logout" OnClick="Logout">LogOut</MudMenuItem>
+                </ChildContent>
+            </MudMenu>
         </MudAppBar>
         @*<MudDrawerContainer Class="mud-height-full">
 
@@ -61,10 +83,10 @@
                    Variant="@DrawerVariant.Responsive" OpenMiniOnHover="false" Elevation="0">
             <MudNavMenu class="nav-menu" Rounded="true" Margin="Margin.Normal" Color="Color.Success" Bordered="true">
 
-                <MudNavLink Href="/seller-dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Dashboard" class="nav-link-box-shadow">Dashboard</MudNavLink>
-                <MudNavLink Href="/dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Home" class="nav-link-box-shadow">Home</MudNavLink>
-                <MudNavLink Href="/order" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCart" class="nav-link-box-shadow">Orders</MudNavLink>
-                <MudNavLink Href="/checkout" Match=" NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCartCheckout" class="nav-link-box-shadow">Checkout</MudNavLink>
+                <MudNavLink Href="/seller-dashboard" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Dashboard" class="nav-link-box-shadow">DASHBOARD</MudNavLink>
+                <MudNavLink Href="/products" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingBag" class="nav-link-box-shadow">PRODUCTS</MudNavLink>
+                @* <MudNavLink Href="/order" Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCart" class="nav-link-box-shadow">Orders</MudNavLink> *@
+                @* <MudNavLink Href="/checkout" Match=" NavLinkMatch.All" Icon="@Icons.Material.Filled.ShoppingCartCheckout" class="nav-link-box-shadow">Checkout</MudNavLink> *@
             </MudNavMenu>
             @* <NavMenu/>*@
         </MudDrawer>
@@ -72,9 +94,6 @@
         <MudMainContent>
             <MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="margin-top: 20px;">
                 @Body
-            </MudContainer>
-            <MudContainer>
-                 copyright 2024
             </MudContainer>
         </MudMainContent>
 
@@ -97,12 +116,18 @@
         backdrop-filter: blur(10px); /* Adjust the amount of blur */
         -webkit-backdrop-filter: blur(10px); /* Safari Support */
     }
+    .custom-textfield {
+        font-size: 0.8rem;
+        height: 30px;
+        max-width: 200px;
+    }
 </style>
 
 @code {
     private MudBreakpointProvider breakpointProvider;
     private bool _isMobileView;
     bool _drawerOpen = true;
+    public string Search { get; set; }
 
     private MudTheme _theme = new();
     private MudThemeProvider? _mudThemeProvider;
@@ -176,6 +201,12 @@
         }
     };
 
+    //UI
+    private async Task Logout()
+    {
+        SecureStorage.Remove(AuthenticationState.AuthStoreKey);
+        AuthenticationState.UnLoadState();
+    }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {

@@ -243,7 +243,7 @@
             },
             "MudBlazor": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[7.8.0, )"
             },
             "Syncfusion.Blazor.Inputs": {
               "target": "Package",
@@ -306,7 +306,7 @@
             },
             "MudBlazor": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[7.8.0, )"
             },
             "Syncfusion.Blazor.Inputs": {
               "target": "Package",
@@ -369,7 +369,7 @@
             },
             "MudBlazor": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[7.8.0, )"
             },
             "Syncfusion.Blazor.Inputs": {
               "target": "Package",
@@ -427,7 +427,7 @@
             },
             "MudBlazor": {
               "target": "Package",
-              "version": "[7.7.0, )"
+              "version": "[7.8.0, )"
             },
             "Syncfusion.Blazor.Inputs": {
               "target": "Package",
@@ -539,6 +539,10 @@
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[6.0.11, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[7.8.0, )"
             }
           },
           "imports": [

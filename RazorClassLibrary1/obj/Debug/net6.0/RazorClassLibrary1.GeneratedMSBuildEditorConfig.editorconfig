@@ -1,4 +1,7 @@
 is_global = true
+build_property.MudDebugAnalyzer = 
+build_property.MudAllowedAttributePattern = 
+build_property.MudIllegalParameters = 
 build_property.TargetFramework = net6.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -17,6 +20,10 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Enoch\source\repos\MauiApp2\RazorClassLibrary1
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Enoch/source/repos/MauiApp2/RazorClassLibrary1/BusinessRegisterComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = QnVzaW5lc3NSZWdpc3RlckNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Enoch/source/repos/MauiApp2/RazorClassLibrary1/CustomerComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tZXJDb21wb25lbnQucmF6b3I=

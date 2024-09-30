@@ -1,0 +1,134 @@
+﻿@page "/products"
+@using BackendClassLibrary.RequestPayload
+
+<MudStack>
+    <MudStack Justify="Justify.SpaceBetween" Row="true">
+        <MudText Typo="Typo.h5">Products</MudText>
+        
+        <MudStack Row Spacing="2" AlignItems="AlignItems.Center" Class="stack-adorner">
+            <MudBreakpointProvider @ref="@breakpointProvider" OnBreakpointChanged="OnBreakpointChanged">
+                @if (_isMobileView)
+                {
+                    <MudButton Size="Size.Small" Color="Color.Warning" Variant="Variant.Outlined" Class="hideable">
+                        <MudIcon Icon="@Icons.Material.Filled.FilterAlt" Title="Filter"/>
+                    </MudButton>
+                    <MudButton OnClick="@(e => ToggleOverlay(true))" Variant="Variant.Filled" Color="Color.Primary">
+                        <MudIcon Icon="@Icons.Material.Filled.Add" Title="Add Product"/>
+                    </MudButton>
+                }
+                else
+                {
+                    <MudButton Size="Size.Small" Color="Color.Warning" Variant="Variant.Outlined"
+                               StartIcon="@Icons.Material.Filled.FilterAlt"
+                               Class="hideable">Filter</MudButton>
+                    <MudButton OnClick="@(e => ToggleOverlay(true))" Variant="Variant.Filled" Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add">
+                        Add Products
+                    </MudButton>
+                }     
+            </MudBreakpointProvider>
+            
+        </MudStack>
+    </MudStack>
+
+
+
+</MudStack>
+
+<MudOverlay @bind-Visible="visible" DarkBackground="true" ZIndex="9999">
+   <div style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 60vw;">
+        <MudCard Elevation="3" Style="max-width: 600px; width: 100%; margin: 16px;">
+            <MudCardHeader>
+                <MudStack Justify="Justify.SpaceBetween" Row="true">
+                    <MudText Typo="Typo.h4">Add Product</MudText>
+                </MudStack>
+            </MudCardHeader>
+            <MudCardContent>
+                <MudTextField Required="true" Label="Name" Variant="Variant.Outlined" Class="mt-3"
+                              @bind-Value="addProduct.Name" For="@(() => addProduct.Name)" />
+                <MudTextField Required="true" Label="Description" Variant="Variant.Outlined" Class="mt-3"
+                              @bind-Value="addProduct.Description"
+                              For="@(() => addProduct.Description)" />
+                <MudTextField Required Label="Price" Format="F1" Variant="Variant.Outlined" Class="mt-3"
+                              @bind-Value="addProduct.Price" For="@(() => addProduct.Price)" />
+
+                <MudFileUpload T="IReadOnlyList<IBrowserFile>" Accept=".png, .jpg" FilesChanged="UploadFiles" MaximumFileCount="100">
+                    <ActivatorContent>
+                        <MudButton Variant="Variant.Filled"
+                                   Color="Color.Primary"
+                                   StartIcon="@Icons.Material.Filled.CloudUpload">
+                            Only image files
+                        </MudButton>
+                    </ActivatorContent>
+                </MudFileUpload>
+                @if (files != null)
+                {
+                    <MudList T="string">
+                        @foreach (var file in files)
+                        {
+                            <MudListItem Icon="@Icons.Material.Filled.AttachFile">
+                                @file.Name <code>@file.Size bytes</code>
+                            </MudListItem>
+                        }
+                    </MudList>
+                }
+
+            </MudCardContent>
+            <MudCardActions>
+                <MudButton OnClick="@(e => ToggleOverlay(false))" Variant="Variant.Text"
+                           Color="Color.Warning"
+                           >
+                    Close
+                </MudButton>
+                @if (!isBusy)
+                {
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               >
+                        Submit
+                    </MudButton>
+                }
+                else
+                {
+                    <MudButton ButtonType="ButtonType.Submit"
+                               Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               
+                               Disabled=true>
+                        <MudProgressCircular Color="Color.Default" Size="Size.Small" Style="margin-right: 8px" Indeterminate="true" />
+                        Submitting...
+                    </MudButton>
+                }
+
+            </MudCardActions>
+        </MudCard>
+    </div>
+</MudOverlay>
+
+@code {
+    private MudBreakpointProvider breakpointProvider;
+    private bool _isMobileView;
+    private bool visible;
+    private bool isBusy = false;
+
+    private AddProductRequest addProduct = new();
+    IList<IBrowserFile> files = new List<IBrowserFile>();
+
+
+    private void OnBreakpointChanged(Breakpoint breakpoint)
+    {
+        _isMobileView = breakpoint <= Breakpoint.Sm;
+    }
+
+    public void ToggleOverlay(bool value)
+    {
+        visible = value;
+    }
+
+    private void UploadFiles(IReadOnlyList<IBrowserFile> files)
+    {
+        foreach (var file in files)
+        {
+            this.files.Add(file);
+        }
+    }
+}

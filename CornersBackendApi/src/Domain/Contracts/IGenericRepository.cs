@@ -5,7 +5,8 @@
         Task<IEnumerable<T>> GetAllAsync();
         IQueryable<T> GetAllAsQueryable();
         Task<T> GetById(Guid id);
-        Task<T> Create(T entity);
+        Task<T> Add(T entity);
+        Task AddRange(IEnumerable<T> entities);
         Task<bool> Exists(Guid id);
         Task Update(T entity);
         Task Delete(T entity);

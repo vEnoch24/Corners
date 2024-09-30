@@ -3,40 +3,199 @@
   "WorkspaceRootPath": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\cornersbackendapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\cornersbackendapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\products.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\buyer\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\buyer\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerdashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerbusinessregistration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerbusinessregistration.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\requestpayload\\addproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\requestpayload\\addproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\infrastructure\\persistence\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\infrastructure\\persistence\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\presentation\\controllers\\businessaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\presentation\\controllers\\businessaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerregister.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerregister.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerprepasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerprepasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerpasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerpasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\presentation\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\presentation\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\orderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\businessdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\businessdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\requestpayload\\addproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|solutionrelative:backendclasslibrary\\requestpayload\\addproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\presentation\\controllers\\businessaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\presentation\\controllers\\businessaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\requestpayload\\updatebusinesssrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|solutionrelative:backendclasslibrary\\requestpayload\\updatebusinesssrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\dto\\businessdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|solutionrelative:backendclasslibrary\\dto\\businessdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\businessdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\dto\\businessdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\cornersbackendapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\cornersbackendapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\verification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\verification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerverification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerverification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\conersapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\conersapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186E3064-77D1-4921-8E5C-4960344A4A09}|RazorClassLibrary1\\RazorClassLibrary1.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\razorclasslibrary1\\customercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{186E3064-77D1-4921-8E5C-4960344A4A09}|RazorClassLibrary1\\RazorClassLibrary1.csproj|solutionrelative:razorclasslibrary1\\customercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\requestpayload\\updatebusinessrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\requestpayload\\updatebusinessrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{186E3064-77D1-4921-8E5C-4960344A4A09}|RazorClassLibrary1\\RazorClassLibrary1.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\razorclasslibrary1\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{186E3064-77D1-4921-8E5C-4960344A4A09}|RazorClassLibrary1\\RazorClassLibrary1.csproj|solutionrelative:razorclasslibrary1\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enoch\\AppData\\Roaming\\Microsoft\\UserSecrets\\9f01bf0c-e3b1-4ba1-ba4c-8b60573912c1\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\requestpayload\\getproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\requestpayload\\getproductrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\buyer\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\buyer\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,14 +214,6 @@
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\contracts\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,63 +222,8 @@
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\services\\emailservice\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\businessdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\businessdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\sellermodels\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\maildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\maildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\conersapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\conersapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\layout\\startuplayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\layout\\startuplayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerverification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerverification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerregister.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerregister.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerlogin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Enoch\\AppData\\Roaming\\Microsoft\\UserSecrets\\9f01bf0c-e3b1-4ba1-ba4c-8b60573912c1\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerpasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerpasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\seller\\sellerprepasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\seller\\sellerprepasswordreset.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\models\\seller\\businessloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -136,18 +232,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|solutionrelative:backendclasslibrary\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\components\\pages\\verification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\components\\pages\\verification.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\buyermodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\buyermodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\models\\seller\\businessregistermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -176,10 +260,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\platforms\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\platforms\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\googleuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -226,16 +306,8 @@
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\platforms\\ios\\appdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\dto\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -248,10 +320,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\state\\authenticationstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\state\\authenticationstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\conersapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00A5E6BD-1083-40B0-B1ED-9E271443CA85}|ConersApp\\ConersApp.csproj|solutionrelative:conersapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -306,10 +374,6 @@
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\dto\\userresetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\application\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\application\\dto\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\domain\\entities\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\domain\\entities\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -338,12 +402,12 @@
       "RelativeMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|solutionrelative:backendclasslibrary\\dto\\authbusinessresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{186E3064-77D1-4921-8E5C-4960344A4A09}|RazorClassLibrary1\\RazorClassLibrary1.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\razorclasslibrary1\\customercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{186E3064-77D1-4921-8E5C-4960344A4A09}|RazorClassLibrary1\\RazorClassLibrary1.csproj|solutionrelative:razorclasslibrary1\\customercomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\backendclasslibrary\\customattributes\\strongpasswordattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF22A87-DAD2-456E-BCF9-3E5757931108}|BackendClassLibrary\\BackendClassLibrary.csproj|solutionrelative:backendclasslibrary\\customattributes\\strongpasswordattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|c:\\users\\enoch\\source\\repos\\mauiapp2\\cornersbackendapi\\src\\infrastructure\\migrations\\20240926181027_productordertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36E3498D-9ABC-4874-B38E-6130CC0E2A85}|CornersBackendApi\\CornersBackendApi.csproj|solutionrelative:cornersbackendapi\\src\\infrastructure\\migrations\\20240926181027_productordertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -353,11 +417,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\Enoch\\AppData\\Roaming\\Microsoft\\UserSecrets\\9f01bf0c-e3b1-4ba1-ba4c-8b60573912c1\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\9f01bf0c-e3b1-4ba1-ba4c-8b60573912c1\\secrets.json",
@@ -366,256 +430,231 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-09-11T09:56:19.785Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "StartupLayout.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Layout\\StartupLayout.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Layout\\StartupLayout.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Layout\\StartupLayout.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Layout\\StartupLayout.razor",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAYwE4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-14T13:11:34.759Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAACgAAAAAAAAAAIBJwD8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:03:59.075Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\Program.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\Program.cs",
-              "RelativeToolTip": "CornersBackendApi\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAIBJwC4AAABXAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T09:52:54.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T15:10:03.563Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "BusinessAccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwAoAAAAAAAAAAAAAAA==",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwCYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T09:59:54.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:52.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SellerDashboard.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T10:16:40.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Register.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Buyer\\Register.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Register.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Buyer\\Register.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:07:38.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CornersBackendApi.csproj",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\CornersBackendApi.csproj",
-              "RelativeDocumentMoniker": "CornersBackendApi\\CornersBackendApi.csproj",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\CornersBackendApi.csproj",
-              "RelativeToolTip": "CornersBackendApi\\CornersBackendApi.csproj",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-11T09:54:51.831Z",
+              "WhenOpened": "2024-09-26T16:32:26.545Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:04.642Z",
+              "Title": "SellerDashboard.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerDashboard.razor",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T10:16:40.878Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "SellerBusinessRegistration.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerBusinessRegistration.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerBusinessRegistration.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerBusinessRegistration.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerBusinessRegistration.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-28T16:24:20.211Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Products.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\Products.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\Products.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\Products.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\Products.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAHAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T18:08:50.404Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AddProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\AddProductRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\AddProductRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\AddProductRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\AddProductRequest.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAawA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:07:40.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "ConersApp\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\index.html",
+              "RelativeToolTip": "ConersApp\\wwwroot\\index.html",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-05T22:14:34.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "ConersApp\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "ConersApp\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAFkBAAAAAAAAAAAUwGMBAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-26T08:17:03.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAACgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T22:44:34.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Persistence\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "CornersBackendApi\\src\\Infrastructure\\Persistence\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Persistence\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "CornersBackendApi\\src\\Infrastructure\\Persistence\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T10:01:10.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T20:29:21.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ResetPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:26.194Z",
+              "Title": "SellerRegister.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAALIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T18:08:24.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:22.422Z",
+              "DocumentIndex": 11,
+              "Title": "SellerPrePasswordReset.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T18:41:57.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
+              "Title": "SellerPasswordReset.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAEYAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T18:42:21.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SellerController.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\SellerController.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Presentation\\Controllers\\SellerController.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\SellerController.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Presentation\\Controllers\\SellerController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAqwBwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T15:49:10.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "CornersBackendApi\\src\\Presentation\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\AccountController.cs",
               "RelativeToolTip": "CornersBackendApi\\src\\Presentation\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAIIBAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T09:59:19.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterBusinessDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:06.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:58.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:58.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:07:58.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:45.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "MailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Title": "OrderProduct.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\OrderProduct.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\OrderProduct.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\OrderProduct.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\OrderProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:09:10Z",
+              "WhenOpened": "2024-09-26T15:12:21.452Z",
               "EditorCaption": ""
             },
             {
@@ -634,721 +673,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Products.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Title": "AddProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\AddProductRequest.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\RequestPayload\\AddProductRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\AddProductRequest.cs",
+              "RelativeToolTip": "BackendClassLibrary\\RequestPayload\\AddProductRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:00:35.857Z",
+              "WhenOpened": "2024-09-30T20:10:04.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Seller.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Seller.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Seller.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Seller.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\SellerModels\\Seller.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwA8AAAAwAAAAAAAAAA==",
+              "Title": "BusinessAccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Presentation\\Controllers\\BusinessAccountController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAIBJwHAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:00:41.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MailData.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:01:19.463Z",
+              "WhenOpened": "2024-09-11T09:59:54.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "ConersApp.csproj",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\ConersApp.csproj",
-              "RelativeDocumentMoniker": "ConersApp\\ConersApp.csproj",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\ConersApp.csproj",
-              "RelativeToolTip": "ConersApp\\ConersApp.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAABBwBsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-21T01:20:16.869Z",
+              "Title": "UpdateBusinesssRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\UpdateBusinesssRequest.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\RequestPayload\\UpdateBusinesssRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\UpdateBusinesssRequest.cs",
+              "RelativeToolTip": "BackendClassLibrary\\RequestPayload\\UpdateBusinesssRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T19:50:38.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Index.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Index.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Index.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Index.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Index.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:08:20.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SellerRegister.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerRegister.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T18:08:24.258Z",
+              "DocumentIndex": 20,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\Services\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\Services\\IProductService.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:01:21.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "SellerVerification.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAswHIAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-23T09:18:25.732Z",
+              "Title": "BusinessDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\BusinessDetailsDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\BusinessDetailsDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\BusinessDetailsDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\BusinessDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:29:49.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\_Imports.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\_Imports.razor",
-              "RelativeToolTip": "ConersApp\\Components\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:01:29.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 22,
               "Title": "SellerLogin.razor",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerLogin.razor",
               "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerLogin.razor",
               "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerLogin.razor",
               "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerLogin.razor",
-              "ViewState": "AgIAAJUBAAAAAAAAAIBpwKgBAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAIBJwL4AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-13T18:08:02.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "SellerPrePasswordReset.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerPrePasswordReset.razor",
-              "ViewState": "AgIAAGUAAAAAAAAAAIBpwHQAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T18:41:57.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "SellerPasswordReset.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerPasswordReset.razor",
-              "ViewState": "AgIAAGkAAAAAAAAAAIBpwIsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T18:42:21.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\LoginModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "BusinessDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\BusinessDetailsDto.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\BusinessDetailsDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\BusinessDetailsDto.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Dto\\BusinessDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T09:55:50.271Z",
+              "WhenOpened": "2024-09-29T23:01:47.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Verification.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Verification.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Verification.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Verification.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Verification.razor",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAwwJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-08T17:53:18.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "BusinessLoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T09:40:15.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\BuyerModels\\User.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\BuyerModels\\User.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\BuyerModels\\User.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\BuyerModels\\User.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T13:36:22.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Routes.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Routes.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Routes.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Routes.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Routes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T21:57:51.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "RegisterModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\RegisterModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\RegisterModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\RegisterModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\RegisterModel.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBsAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T09:53:25.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Login.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Login.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Buyer\\Login.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Login.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Buyer\\Login.razor",
-              "ViewState": "AgIAAD0AAAAAAAAAAEB1wFoAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-20T22:03:05.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "BusinessRegisterModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T08:27:24.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml.cs",
-              "RelativeDocumentMoniker": "ConersApp\\Platforms\\Windows\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml.cs",
-              "RelativeToolTip": "ConersApp\\Platforms\\Windows\\App.xaml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswBYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T02:40:16.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml",
-              "RelativeDocumentMoniker": "ConersApp\\Platforms\\Windows\\App.xaml",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml",
-              "RelativeToolTip": "ConersApp\\Platforms\\Windows\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-20T23:27:23.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "FetchData.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\FetchData.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\FetchData.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\FetchData.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\FetchData.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-05T22:10:35.516Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Map.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Map.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Map.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Map.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\Map.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-14T14:20:40.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADwvzMAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:09:23.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "GoogleUserInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:47.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "GoogleTokenResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T02:59:35.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "GoogleUserInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwA8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T12:18:16.705Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "app.manifest",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\app.manifest",
-              "RelativeDocumentMoniker": "ConersApp\\Platforms\\Windows\\app.manifest",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\app.manifest",
-              "RelativeToolTip": "ConersApp\\Platforms\\Windows\\app.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2024-09-20T23:22:25.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\App.xaml",
-              "RelativeDocumentMoniker": "ConersApp\\App.xaml",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\App.xaml",
-              "RelativeToolTip": "ConersApp\\App.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-08T17:52:12.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "GoogleAuthSettingsDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T22:52:49.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "GoogleAuthResponseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T23:15:20.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "AuthBusinessResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:04:42.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "LoginBusinessDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:00.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "SellerDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:05:16.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T13:37:39.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\Models\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:00:49.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "AppDelegate.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\iOS\\AppDelegate.cs",
-              "RelativeDocumentMoniker": "ConersApp\\Platforms\\iOS\\AppDelegate.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\iOS\\AppDelegate.cs",
-              "RelativeToolTip": "ConersApp\\Platforms\\iOS\\AppDelegate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T19:19:30.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "AuthResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\AuthResponseDto.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\AuthResponseDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\AuthResponseDto.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Dto\\AuthResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T13:59:37.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:06:03.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "google-map.html",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\google-map.html",
-              "RelativeDocumentMoniker": "ConersApp\\wwwroot\\google-map.html",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\google-map.html",
-              "RelativeToolTip": "ConersApp\\wwwroot\\google-map.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBpwA4AAAClAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-14T18:39:55.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "ConersApp\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\index.html",
-              "RelativeToolTip": "ConersApp\\wwwroot\\index.html",
-              "ViewState": "AgIAAAgAAAAAAAAAAKiDwDMAAAB1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-05T22:14:34.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "ConersApp\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\MauiProgram.cs",
-              "RelativeToolTip": "ConersApp\\MauiProgram.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T22:02:33.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "AuthenticationState.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\State\\AuthenticationState.cs",
-              "RelativeDocumentMoniker": "ConersApp\\State\\AuthenticationState.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\State\\AuthenticationState.cs",
-              "RelativeToolTip": "ConersApp\\State\\AuthenticationState.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T21:50:55.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "OrderFufillment.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:07:24.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "PrePasswordReset.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\PrePasswordReset.razor",
-              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\PrePasswordReset.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\PrePasswordReset.razor",
-              "RelativeToolTip": "ConersApp\\Components\\Pages\\PrePasswordReset.razor",
-              "ViewState": "AgIAABwAAAAAAAAAANB+wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T18:38:53.948Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "ForgotPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
-              "RelativeToolTip": "BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T20:42:47.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "ForgotPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T19:27:49.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "EmailVerificationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:16.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "OtpVerificationRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:08:21.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "ResetPasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
-              "RelativeToolTip": "BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T17:30:01.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "BackendClassLibrary.csproj",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\BackendClassLibrary.csproj",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj",
-              "RelativeToolTip": "BackendClassLibrary\\BackendClassLibrary.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "CornersBackendApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\CornersBackendApi.csproj",
+              "RelativeDocumentMoniker": "CornersBackendApi\\CornersBackendApi.csproj",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\CornersBackendApi.csproj",
+              "RelativeToolTip": "CornersBackendApi\\CornersBackendApi.csproj",
+              "ViewState": "AgIAAAsAAAAAAAAAAABBwAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-16T11:24:18.857Z",
+              "WhenOpened": "2024-09-11T09:54:51.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "VerifyModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\VerifyModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\VerifyModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\VerifyModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\VerifyModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T18:43:23.216Z",
+              "WhenOpened": "2024-09-11T10:05:52.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "OtpModel.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\OtpModel.cs",
-              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\OtpModel.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\OtpModel.cs",
-              "RelativeToolTip": "BackendClassLibrary\\Models\\OtpModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-08T18:09:34.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:07:46.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "UserResetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
-              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
-              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T10:06:08.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 27,
               "Title": "EmailDto.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\EmailDto.cs",
               "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\EmailDto.cs",
@@ -1361,7 +802,852 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Verification.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Verification.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Verification.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Verification.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Verification.razor",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAwwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-08T17:53:18.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SellerVerification.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Seller\\SellerVerification.razor",
+              "ViewState": "AgIAADYAAAAAAAAAAIBJwD8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T09:18:25.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ConersApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\ConersApp.csproj",
+              "RelativeDocumentMoniker": "ConersApp\\ConersApp.csproj",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\ConersApp.csproj",
+              "RelativeToolTip": "ConersApp\\ConersApp.csproj",
+              "ViewState": "AgIAAAoAAAAAAAAAAABBwBsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-21T01:20:16.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CustomerComponent.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\CustomerComponent.razor",
+              "RelativeDocumentMoniker": "RazorClassLibrary1\\CustomerComponent.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\CustomerComponent.razor",
+              "RelativeToolTip": "RazorClassLibrary1\\CustomerComponent.razor",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T08:47:22.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UpdateBusinessRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\UpdateBusinessRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\UpdateBusinessRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\UpdateBusinessRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\UpdateBusinessRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T16:37:35.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\_Imports.razor",
+              "RelativeDocumentMoniker": "RazorClassLibrary1\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\_Imports.razor",
+              "RelativeToolTip": "RazorClassLibrary1\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T20:38:55.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "ConersApp\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\MauiProgram.cs",
+              "RelativeToolTip": "ConersApp\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T22:02:33.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "ConersApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T22:01:29.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ApplicationServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\ApplicationServiceRegistration.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\ApplicationServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\ApplicationServiceRegistration.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\ApplicationServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T17:20:21.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Repository\\GenericRepository.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAnwDQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:08:04.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GetProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\GetProductRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\GetProductRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\GetProductRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\GetProductRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T20:04:16.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "20240926181027_ProductOrderTable.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Migrations\\20240926181027_ProductOrderTable.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Infrastructure\\Migrations\\20240926181027_ProductOrderTable.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Migrations\\20240926181027_ProductOrderTable.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Infrastructure\\Migrations\\20240926181027_ProductOrderTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T18:10:27.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADgvwwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:07:58.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\TokenService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvzMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:09:23.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:08:58.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IProductRepository.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:22:18.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Contracts\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Contracts\\IUnitOfWork.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Contracts\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:51:39.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\Program.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\Program.cs",
+              "RelativeToolTip": "CornersBackendApi\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAACBzwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T09:52:54.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Repository\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:05:26.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Repository\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Repository\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:53:14.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Register.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Register.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Buyer\\Register.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Register.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Buyer\\Register.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T22:07:38.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\ResetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:08:26.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:05:22.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RegisterBusinessDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\RegisterBusinessDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:05:06.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\RegisterDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:05:58.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\EmailService\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:08:45.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "MailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Services\\EmailService\\MailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:09:10Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "MailData.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Entities\\MailData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:01:19.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\LoginModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T09:55:50.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "BusinessLoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\Seller\\BusinessLoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T09:40:15.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\RegisterModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\RegisterModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T09:53:25.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Login.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Buyer\\Login.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Buyer\\Login.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Buyer\\Login.razor",
+              "ViewState": "AgIAABQAAAAAAAAAADSQwFoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-20T22:03:05.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "BusinessRegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\Seller\\BusinessRegisterModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T08:27:24.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml.cs",
+              "RelativeDocumentMoniker": "ConersApp\\Platforms\\Windows\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml.cs",
+              "RelativeToolTip": "ConersApp\\Platforms\\Windows\\App.xaml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswBYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T02:40:16.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml",
+              "RelativeDocumentMoniker": "ConersApp\\Platforms\\Windows\\App.xaml",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\App.xaml",
+              "RelativeToolTip": "ConersApp\\Platforms\\Windows\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-20T23:27:23.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FetchData.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\FetchData.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\FetchData.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\FetchData.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\FetchData.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-05T22:10:35.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Map.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Map.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Map.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Map.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\Map.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-14T14:20:40.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "GoogleUserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\GoogleUserInfo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:05:47.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "GoogleTokenResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Dto\\GoogleTokenResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T02:59:35.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "GoogleUserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Dto\\GoogleUserInfo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T12:18:16.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\app.manifest",
+              "RelativeDocumentMoniker": "ConersApp\\Platforms\\Windows\\app.manifest",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\Windows\\app.manifest",
+              "RelativeToolTip": "ConersApp\\Platforms\\Windows\\app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2024-09-20T23:22:25.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\App.xaml",
+              "RelativeDocumentMoniker": "ConersApp\\App.xaml",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\App.xaml",
+              "RelativeToolTip": "ConersApp\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-08T17:52:12.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "GoogleAuthSettingsDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\GoogleAuthSettingsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T22:52:49.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "GoogleAuthResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\GoogleAuthResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T23:15:20.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "AuthBusinessResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\AuthBusinessResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:04:42.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "LoginBusinessDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\LoginBusinessDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:05:00.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "SellerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\SellerDtos\\SellerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:05:16.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Enum\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T13:37:39.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "AppDelegate.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeDocumentMoniker": "ConersApp\\Platforms\\iOS\\AppDelegate.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Platforms\\iOS\\AppDelegate.cs",
+              "RelativeToolTip": "ConersApp\\Platforms\\iOS\\AppDelegate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T19:19:30.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\AuthResponseDto.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Dto\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T13:59:37.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:06:03.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 78,
+              "Title": "google-map.html",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\google-map.html",
+              "RelativeDocumentMoniker": "ConersApp\\wwwroot\\google-map.html",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\wwwroot\\google-map.html",
+              "RelativeToolTip": "ConersApp\\wwwroot\\google-map.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBpwA4AAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-14T18:39:55.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "AuthenticationState.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\State\\AuthenticationState.cs",
+              "RelativeDocumentMoniker": "ConersApp\\State\\AuthenticationState.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\State\\AuthenticationState.cs",
+              "RelativeToolTip": "ConersApp\\State\\AuthenticationState.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAkwBQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T21:50:55.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "OrderFufillment.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Domain\\Enum\\OrderFufillment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:07:24.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "PrePasswordReset.razor",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\PrePasswordReset.razor",
+              "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\PrePasswordReset.razor",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\PrePasswordReset.razor",
+              "RelativeToolTip": "ConersApp\\Components\\Pages\\PrePasswordReset.razor",
+              "ViewState": "AgIAAAEAAAAAAAAAAMCNwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T18:38:53.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "ForgotPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
+              "RelativeToolTip": "BackendClassLibrary\\RequestPayload\\ForgotPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:42:47.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "ForgotPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\ForgotPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:27:49.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "EmailVerificationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\EmailVerificationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:08:16.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "OtpVerificationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\RequestPayload\\OtpVerificationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:08:21.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "ResetPasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
+              "RelativeToolTip": "BackendClassLibrary\\RequestPayload\\ResetPasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T17:30:01.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "BackendClassLibrary.csproj",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\BackendClassLibrary.csproj",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\BackendClassLibrary.csproj",
+              "RelativeToolTip": "BackendClassLibrary\\BackendClassLibrary.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-16T11:24:18.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "VerifyModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\VerifyModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\VerifyModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\VerifyModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\VerifyModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T18:43:23.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "OtpModel.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\OtpModel.cs",
+              "RelativeDocumentMoniker": "BackendClassLibrary\\Models\\OtpModel.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Models\\OtpModel.cs",
+              "RelativeToolTip": "BackendClassLibrary\\Models\\OtpModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T18:09:34.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:07:46.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "UserResetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
+              "RelativeDocumentMoniker": "CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
+              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
+              "RelativeToolTip": "CornersBackendApi\\src\\Application\\Dto\\UserResetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T10:06:08.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
               "Title": "StrongPasswordAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\CustomAttributes\\StrongPasswordAttribute.cs",
               "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\CustomAttributes\\StrongPasswordAttribute.cs",
@@ -1374,7 +1660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 93,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Domain\\Entities\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "CornersBackendApi\\src\\Domain\\Entities\\Models\\Transaction.cs",
@@ -1387,7 +1673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 95,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\CornersBackendApi\\src\\Presentation\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "CornersBackendApi\\src\\Presentation\\Controllers\\WeatherForecastController.cs",
@@ -1400,7 +1686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 96,
               "Title": "Verification.razor.css",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\ConersApp\\Components\\Pages\\Verification.razor.css",
               "RelativeDocumentMoniker": "ConersApp\\Components\\Pages\\Verification.razor.css",
@@ -1413,7 +1699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 97,
               "Title": "_Host.cshtml",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BlazorServerApp\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "BlazorServerApp\\Pages\\_Host.cshtml",
@@ -1426,7 +1712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 98,
               "Title": "Index.razor",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BlazorServerApp\\Pages\\Index.razor",
               "RelativeDocumentMoniker": "BlazorServerApp\\Pages\\Index.razor",
@@ -1439,7 +1725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 99,
               "Title": "AuthBusinessResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\Dto\\AuthBusinessResponseDto.cs",
               "RelativeDocumentMoniker": "BackendClassLibrary\\Dto\\AuthBusinessResponseDto.cs",
@@ -1452,20 +1738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "CustomerComponent.razor",
-              "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\CustomerComponent.razor",
-              "RelativeDocumentMoniker": "RazorClassLibrary1\\CustomerComponent.razor",
-              "ToolTip": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\RazorClassLibrary1\\CustomerComponent.razor",
-              "RelativeToolTip": "RazorClassLibrary1\\CustomerComponent.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAwAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-16T08:47:22.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 100,
               "Title": "StrongPasswordAttribute.cs",
               "DocumentMoniker": "C:\\Users\\Enoch\\source\\repos\\MauiApp2\\BackendClassLibrary\\CustomAttributes\\StrongPasswordAttribute.cs",
               "RelativeDocumentMoniker": "BackendClassLibrary\\CustomAttributes\\StrongPasswordAttribute.cs",

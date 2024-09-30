@@ -1,3 +1,4 @@
+using CornersBackendApi.src.Application;
 using CornersBackendApi.src.Application.Dto;
 using CornersBackendApi.src.Application.Services;
 using CornersBackendApi.src.Application.Services.EmailService;
@@ -50,6 +51,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.Configure<GoogleAuthSettingsDto>(builder.Configuration.GetSection("Authentication:Google"));
+builder.Services.ConfigureApplicationServices(builder.Configuration);
 
 var app = builder.Build();
 

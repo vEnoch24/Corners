@@ -83,6 +83,54 @@ namespace CornersBackendApi.src.Presentation.Controllers
             return Ok(GenerateToken(seller));
         }
 
+        [HttpPatch("update-business")]
+        public async Task<IActionResult> UpdateBusiness(UpdateBusinessRequest request)
+        {
+            var seller = await _context.Sellers.FirstOrDefaultAsync(s => s.Id == request.Id);
+            if(seller == null)
+            {
+                return BadRequest("User not found");
+            }
+
+            try
+            {
+                seller.BusinessName = request.BusinessName;
+                seller.BusinessPhoneNumber = request.BusinessPhoneNumber;
+                seller.BusinessLocation = request.BusinessLocation;
+                
+
+                _context.Sellers.Update(seller);
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+            return Ok();
+        }
+
+        [HttpGet("get-business-details")]
+        public async Task<ActionResult<BusinessDetailsDto>> GetBusinessDetails(string Id)
+        {
+            var seller = await _context.Sellers
+                .Where(s => s.Id == Id)
+                .Select(s => new BusinessDetailsDto
+                {
+                    BusinessName = s.BusinessName,
+                    BusinessLocation = s.BusinessLocation
+                })
+                .FirstOrDefaultAsync();
+
+            if(seller == null)
+            {
+                return NotFound("Business details not found");
+            }
+
+
+            return(seller);                                               
+        }
+
         [HttpPatch("forgot-password")]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordRequest request)
         {

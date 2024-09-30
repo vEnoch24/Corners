@@ -1,8 +1,190 @@
 ﻿@page "/seller-dashboard"
 
-<h3>SellerDashboard</h3>
+@using BackendClassLibrary.Dto
+@using BackendClassLibrary.Helper
+@using ConersApp.State
+
+@inject IDialogService DialogService;
+@inject ISnackbar Snackbar;
+@inject NavigationManager navigationManager;
+
+@if(isLoading)
+{
+    <MudStack>
+        @* <MudPaper Class="pa-4">
+            
+        </MudPaper> *@
+        <MudStack Justify="Justify.SpaceBetween" Row="true">
+            <MudText Typo="Typo.h5">Dashboard</MudText>
+            <MudButton Variant="Variant.Filled" Href="/products"
+                       Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add">Products</MudButton>
+        </MudStack>
+
+
+        <MudCard Elevation="5">
+            <MudCardContent>
+                <MudSkeleton Width="30%" Height="42px;" />
+                <MudGrid>
+                    <MudItem xs="12" sm="6">
+                        <MudSkeleton Width="64px" Height="40px" Class="ml-2" />
+                        
+                    </MudItem>
+
+                    <MudItem xs="12" sm="6">
+                        <MudSkeleton Width="64px" Height="40px" Class="ml-2" />
+                       
+                    </MudItem>
+                </MudGrid>
+            </MudCardContent>
+        </MudCard>
+    </MudStack>
+
+   
+}
+else if(businessRegistered && businessAdded)
+{
+    <MudStack>
+       @*  <MudPaper Class="pa-4">
+            
+        </MudPaper> *@
+        <MudStack Justify="Justify.SpaceBetween" Row="true">
+            <MudText Typo="Typo.h5">Dashboard</MudText>
+            <MudButton Variant="Variant.Filled" Href="/products"
+                       Color="Color.Primary" StartIcon="@Icons.Material.Filled.Add">Products</MudButton>
+        </MudStack>
+
+
+        @* BUINESS DETAILS *@
+        <MudCard Elevation="5">
+            <MudCardContent>
+                @if (businessDetails != null)
+                {
+                    <MudText Typo="Typo.h5">Business Details</MudText>
+
+                    <MudGrid>
+                        <MudItem xs="12" sm="6">
+                            <MudText Typo="Typo.body1">@businessDetails.BusinessName</MudText>
+                        </MudItem>
+
+                        <MudItem xs="12" sm="6">                           
+                            <MudText Typo="Typo.body1">@businessDetails.BusinessLocation</MudText>
+                        </MudItem>
+                    </MudGrid>
+                }
+                else
+                {
+                    <MudText Typo="Typo.h6" Color="Color.Error">Business details could not be found.</MudText>
+                }
+            </MudCardContent>
+        </MudCard>
+
+        @* OTHER DETAILS *@
+    </MudStack>
+
+    
+}
+else if (!businessRegistered && businessAdded)
+{
+    <SellerBusinessRegistration OnBusinessRegistered="HandleBusinessRegistration" />
+}
 
 
 @code {
+    [CascadingParameter(Name = "AuthenticationState")]
+    public AuthenticationState AuthenticationState { get; set; }
 
+
+    private int spacing;
+    private string display;
+    private bool isBusy = false;
+    private bool businessAdded;
+    private bool businessRegistered = false;
+    private bool isLoading = true;
+
+    private string _baseUrl;
+    private string? errorMessage;
+
+    private BusinessDetailsDto businessDetails;
+
+    private void SetBaseUrl()
+    {
+        if (DeviceInfo.Platform == DevicePlatform.Android)
+        {
+            _baseUrl = "http://10.0.2.2:44365/";
+        }
+        else
+        {
+            _baseUrl = "https://localhost:44365/";
+        }
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+
+        isLoading = true;
+        await Task.Delay(500);
+        await GetBusinessDetails();
+
+    }
+
+    private async Task HandleBusinessRegistration(bool isRegistered)
+    {
+        if (isRegistered)
+        {
+            await GetBusinessDetails();
+        }
+    }
+
+    private async Task GetBusinessDetails()
+    {
+
+        try
+        {
+            SetBaseUrl();
+            var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
+            var authState = JsonConverter.Deserialize<AuthResponseDto>(authStateJson);
+
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync($"{_baseUrl}api/BusinessAccount/get-business-details?Id={authState.User.Id}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var storedIsRegistered = await SecureStorage.GetAsync("businessRegistered");
+
+                    if (!string.IsNullOrEmpty(storedIsRegistered))
+                    {
+                        businessRegistered = bool.Parse(storedIsRegistered);
+                    }
+                    businessAdded = true;
+
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+                    businessDetails = Newtonsoft.Json.JsonConvert.DeserializeObject<BusinessDetailsDto>(jsonResponse);
+                }
+                else
+                {
+                    isBusy = false;
+                    errorMessage = await response.Content.ReadAsStringAsync();
+
+                    Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+                    Snackbar.Configuration.ShowTransitionDuration = 100;
+                    Snackbar.Add(errorMessage, Severity.Error);
+                }
+
+            }
+
+        }
+        catch (Exception ex)
+        {
+            isBusy = false;
+            errorMessage = ex.Message;
+
+            Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+            Snackbar.Configuration.ShowTransitionDuration = 100;
+            Snackbar.Add(errorMessage, Severity.Error);
+        }
+        finally
+        {
+            isLoading = false;
+        }    
+    }
 }
