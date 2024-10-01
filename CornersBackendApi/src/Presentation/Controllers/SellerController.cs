@@ -19,7 +19,7 @@ namespace CornersBackendApi.src.Presentation.Controllers
         }
 
         [HttpPost("add-product")]
-        public async Task<IActionResult> AddProduct(AddProductRequest request)
+        public async Task<IActionResult> AddProduct([FromForm]AddProductRequest request)
         {
             var result = await _productService.AddProduct(request);
 
@@ -27,9 +27,9 @@ namespace CornersBackendApi.src.Presentation.Controllers
         }
 
         [HttpGet("get-products")]
-        public async Task<ActionResult<IEnumerable<Products>>> GetAllProducts([FromQuery]GetProductRequest request)
+        public async Task<ActionResult<IEnumerable<Products>>> GetAllProducts(string sellerId)
         {
-            var result = await _productService.GetProducts(request);
+            var result = await _productService.GetProducts(sellerId);
 
             return Ok(result);
         }

@@ -55,28 +55,30 @@ else if(businessRegistered && businessAdded)
 
 
         @* BUINESS DETAILS *@
-        <MudCard Elevation="5">
-            <MudCardContent>
-                @if (businessDetails != null)
-                {
-                    <MudText Typo="Typo.h5">Business Details</MudText>
+        <Animate Auto Animation="Animations.FadeRight" Once="true" DelayMilliseconds="100">
+            <MudCard Elevation="5">
+                <MudCardContent>
+                    @if (businessDetails != null)
+                    {
+                        <MudText Typo="Typo.h5">Business Details</MudText>
 
-                    <MudGrid>
-                        <MudItem xs="12" sm="6">
-                            <MudText Typo="Typo.body1">@businessDetails.BusinessName</MudText>
-                        </MudItem>
+                        <MudGrid>
+                            <MudItem xs="12" sm="6">
+                                <MudText Typo="Typo.body1">@businessDetails.BusinessName</MudText>
+                            </MudItem>
 
-                        <MudItem xs="12" sm="6">                           
-                            <MudText Typo="Typo.body1">@businessDetails.BusinessLocation</MudText>
-                        </MudItem>
-                    </MudGrid>
-                }
-                else
-                {
-                    <MudText Typo="Typo.h6" Color="Color.Error">Business details could not be found.</MudText>
-                }
-            </MudCardContent>
-        </MudCard>
+                            <MudItem xs="12" sm="6">                           
+                                <MudText Typo="Typo.body1">@businessDetails.BusinessLocation</MudText>
+                            </MudItem>
+                        </MudGrid>
+                    }
+                    else
+                    {
+                        <MudText Typo="Typo.h6" Color="Color.Error">Business details could not be found.</MudText>
+                    }
+                </MudCardContent>
+            </MudCard>
+        </Animate>
 
         @* OTHER DETAILS *@
     </MudStack>
@@ -120,11 +122,8 @@ else if (!businessRegistered && businessAdded)
 
     protected async override Task OnInitializedAsync()
     {
-
         isLoading = true;
-        await Task.Delay(500);
         await GetBusinessDetails();
-
     }
 
     private async Task HandleBusinessRegistration(bool isRegistered)

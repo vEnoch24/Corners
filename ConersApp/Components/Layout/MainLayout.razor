@@ -35,46 +35,74 @@
 <CascadingValue Value="AuthenticationState" Name="AuthenticationState">
     <MudLayout>
         <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" @ref="@_mudThemeProvider" Theme="@_customTheme" />
-        <MudAppBar class="blurred-appbar" Dense="false" Elevation="0">
-
-             <MudBreakpointProvider @ref="@breakpointProvider" OnBreakpointChanged="OnBreakpointChanged">
-                @if (_isMobileView)
+        
+            <MudBreakpointProvider @ref="@breakpointProvider" OnBreakpointChanged="OnBreakpointChanged">
+                @if(_isMobileView)
                 {
-                    <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+                     <MudAppBar class="blurred-appbar" Dense="false" Elevation="0">
+                          <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+                         @* <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" /> *@
+                        <MudText Typo="Typo.h4" Class="mt-1">Corners</MudText>
+                        <MudSpacer />
+
+                       <MudIconButton Icon="@Icons.Material.Filled.Search" />
+                        @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
+                        <MudIconButton Icon="@(_isDarkMode ? Icons.Material.Outlined.DarkMode : Icons.Material.Outlined.LightMode)"
+                                   Color="Color.Default"
+                                   Class="ma-4"
+                                   @onclick="ToggleDarkMode" />
+                        <MudMenu>
+                            <ActivatorContent>
+                                <MudAvatar>
+                                    @* <MudImage Src="images/toiletvisit.jpg" /> *@
+                                    <MudIcon Icon="@Icons.Material.Filled.Person" />
+                                </MudAvatar>
+                            </ActivatorContent>
+                            <ChildContent>
+                                <MudMenuItem Icon="@Icons.Material.Filled.Person">Profile</MudMenuItem>
+                                <MudMenuItem Icon="@Icons.Material.Filled.Logout" OnClick="Logout">LogOut</MudMenuItem>
+                            </ChildContent>
+                        </MudMenu>
+                    </MudAppBar>
+                }
+                else
+                {
+                    <MudAppBar class="blurred-appbar" Dense="false" Elevation="0">
+                         @* <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" /> *@
+                        <MudText Typo="Typo.h4" Class="mt-1">Corners</MudText>
+                        <MudSpacer />
+
+                       <MudTextField @bind-Value="Search" 
+                          Label="Search" 
+                          Variant="Variant.Outlined" 
+                          Adornment="Adornment.End" 
+                          AdornmentIcon="@Icons.Material.Filled.Search" 
+                          AdornmentColor="Color.Secondary"
+                          Dense="true"
+                          Margin="Margin.Dense"
+                          Class="custom-textfield" />
+                        @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
+                        <MudIconButton Icon="@(_isDarkMode ? Icons.Material.Outlined.DarkMode : Icons.Material.Outlined.LightMode)"
+                                   Color="Color.Default"
+                                   Class="ma-4"
+                                   @onclick="ToggleDarkMode" />
+                        <MudMenu>
+                            <ActivatorContent>
+                                <MudAvatar>
+                                    @* <MudImage Src="images/toiletvisit.jpg" /> *@
+                                    <MudIcon Icon="@Icons.Material.Filled.Person" />
+                                </MudAvatar>
+                            </ActivatorContent>
+                            <ChildContent>
+                                <MudMenuItem Icon="@Icons.Material.Filled.Person">Profile</MudMenuItem>
+                                <MudMenuItem Icon="@Icons.Material.Filled.Logout" OnClick="Logout">LogOut</MudMenuItem>
+                            </ChildContent>
+                        </MudMenu>
+                    </MudAppBar>
                 }
             </MudBreakpointProvider>
 
-            @* <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" /> *@
-            <MudText Typo="Typo.h4" Class="mt-1">Corners</MudText>
-            <MudSpacer />
 
-           <MudTextField @bind-Value="Search" 
-              Label="Search" 
-              Variant="Variant.Outlined" 
-              Adornment="Adornment.End" 
-              AdornmentIcon="@Icons.Material.Filled.Search" 
-              AdornmentColor="Color.Secondary"
-              Dense="true"
-              Margin="Margin.Dense"
-              Class="custom-textfield" />
-            @* <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Inherit" Edge="Edge.End" /> *@
-            <MudIconButton Icon="@(_isDarkMode ? Icons.Material.Outlined.DarkMode : Icons.Material.Outlined.LightMode)"
-                       Color="Color.Default"
-                       Class="ma-4"
-                       @onclick="ToggleDarkMode" />
-            <MudMenu>
-                <ActivatorContent>
-                    <MudAvatar>
-                        @* <MudImage Src="images/toiletvisit.jpg" /> *@
-                        M
-                    </MudAvatar>
-                </ActivatorContent>
-                <ChildContent>
-                    <MudMenuItem Icon="@Icons.Material.Filled.Person">Profile</MudMenuItem>
-                    <MudMenuItem Icon="@Icons.Material.Filled.Logout" OnClick="Logout">LogOut</MudMenuItem>
-                </ChildContent>
-            </MudMenu>
-        </MudAppBar>
         @*<MudDrawerContainer Class="mud-height-full">
 
         </MudDrawerContainer>*@

@@ -2789,6 +2789,8 @@
       "BackendClassLibrary/1.0.0": {
         "dependencies": {
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.8",
+          "Microsoft.AspNetCore.Components.Web": "8.0.8",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "6.0.33",

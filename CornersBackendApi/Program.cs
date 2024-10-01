@@ -51,6 +51,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.Configure<GoogleAuthSettingsDto>(builder.Configuration.GetSection("Authentication:Google"));
+builder.Services.AddHttpContextAccessor();
 builder.Services.ConfigureApplicationServices(builder.Configuration);
 
 var app = builder.Build();

@@ -1,5 +1,14 @@
 ﻿@page "/products"
+@using BackendClassLibrary.Dto
+@using BackendClassLibrary.Helper
 @using BackendClassLibrary.RequestPayload
+@using ConersApp.State
+@using System.Text
+@using System.Net.Http.Headers
+
+@inject IDialogService DialogService;
+@inject ISnackbar Snackbar;
+@inject NavigationManager navigationManager;
 
 <MudStack>
     <MudStack Justify="Justify.SpaceBetween" Row="true">
@@ -30,9 +39,45 @@
         </MudStack>
     </MudStack>
 
+    @if(loading)
+    {
+        <MudPaper Class="pa-16 ma-2">
+            <MudProgressLinear Color="Color.Primary" Indeterminate="true" Class="my-7" />
+        </MudPaper>
+    }
+    else if(products == null || !products.Any())
+    {
+        <MudPaper Class="pa-16 ma-2">
+            <MudText Typo="Typo.h6" Align="Align.Center" Class="mt-4">No available products</MudText>
+        </MudPaper>
+    }
+    else
+    {
+        <MudDataGrid Items="@products" Filterable="false" SortMode="@SortMode.None" Groupable="false">
+            <Columns>
+                <PropertyColumn Property="x => x.Name" />
+                <PropertyColumn Property="x => x.Description" />
+                <PropertyColumn Property="x => x.Price" Format="" />
+                <TemplateColumn CellClass="d-flex justify-end">
+                    <CellTemplate>
+                        <MudStack Row>
+                            <MudButton @onclick="OpenDeleteDialog" Size="@Size.Small"  Variant="@Variant.Filled" Color="@Color.Primary">Delete</MudButton>
+                        </MudStack>
+                    </CellTemplate>
+                </TemplateColumn>
+            </Columns>
+
+            <PagerContent>
+                <MudDataGridPager T="ProductsDto" />
+            </PagerContent>
+        </MudDataGrid>
+    }
+
+    
 
 
 </MudStack>
+
 
 <MudOverlay @bind-Visible="visible" DarkBackground="true" ZIndex="9999">
    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 60vw;">
@@ -60,10 +105,10 @@
                         </MudButton>
                     </ActivatorContent>
                 </MudFileUpload>
-                @if (files != null)
+                @if (uploadedFiles != null)
                 {
-                    <MudList T="string">
-                        @foreach (var file in files)
+                    <MudList T="IBrowserFile">
+                        @foreach (var file in uploadedFiles)
                         {
                             <MudListItem Icon="@Icons.Material.Filled.AttachFile">
                                 @file.Name <code>@file.Size bytes</code>
@@ -75,13 +120,12 @@
             </MudCardContent>
             <MudCardActions>
                 <MudButton OnClick="@(e => ToggleOverlay(false))" Variant="Variant.Text"
-                           Color="Color.Warning"
-                           >
+                           Color="Color.Warning" >
                     Close
                 </MudButton>
                 @if (!isBusy)
                 {
-                    <MudButton Variant="Variant.Filled"
+                    <MudButton OnClick="AddProduct" Variant="Variant.Filled"
                                Color="Color.Primary"
                                >
                         Submit
@@ -105,14 +149,38 @@
 </MudOverlay>
 
 @code {
+    [CascadingParameter(Name = "AuthenticationState")]
+    public AuthenticationState AuthenticationState { get; set; }
+
     private MudBreakpointProvider breakpointProvider;
     private bool _isMobileView;
     private bool visible;
     private bool isBusy = false;
+    private bool loading = false;
+
+    private string _baseUrl;
+    private string? errorMessage;
+
+    private byte[] imageByte;
+    private string imageContentType;
 
     private AddProductRequest addProduct = new();
-    IList<IBrowserFile> files = new List<IBrowserFile>();
+    private IEnumerable<ProductsDto> products = new List<ProductsDto>();
 
+    private IList<IBrowserFile> uploadedFiles = new List<IBrowserFile>();
+
+
+    private void SetBaseUrl()
+    {
+        if (DeviceInfo.Platform == DevicePlatform.Android)
+        {
+            _baseUrl = "http://10.0.2.2:44365/";
+        }
+        else
+        {
+            _baseUrl = "https://localhost:44365/";
+        }
+    }
 
     private void OnBreakpointChanged(Breakpoint breakpoint)
     {
@@ -124,11 +192,169 @@
         visible = value;
     }
 
-    private void UploadFiles(IReadOnlyList<IBrowserFile> files)
+    private async Task UploadFiles(IReadOnlyList<IBrowserFile> files)
     {
         foreach (var file in files)
         {
-            this.files.Add(file);
+            uploadedFiles.Add(file);
+            // using (var memoryStream = new MemoryStream())
+            // {
+            //     await file.OpenReadStream().CopyToAsync(memoryStream);
+            //     uploadedFiles.Add(file);
+            // }
         }
+    }
+
+    protected async override Task OnInitializedAsync()
+    {
+        loading = true;
+        await GetProducts();
+    }
+
+    private async Task AddProduct()
+    {
+        try
+        {
+            SetBaseUrl();
+            isBusy = true;
+
+            var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
+            var authState = JsonConverter.Deserialize<AuthResponseDto>(authStateJson);
+
+            // Prepare the request model and files
+            var model = new AddProductRequest
+                {
+                    SellerId = authState.User.Id,
+                    Name = addProduct.Name,
+                    Price = addProduct.Price,
+                    Description = addProduct.Description
+                };
+
+            // Use MultipartFormDataContent to send files and other form data
+            using (var client = new HttpClient())
+            {
+                using (var formData = new MultipartFormDataContent())
+                {
+                    // Add the other form data (Product details)
+                    formData.Add(new StringContent(model.SellerId), nameof(model.SellerId));
+                    formData.Add(new StringContent(model.Name), nameof(model.Name));
+                    formData.Add(new StringContent(model.Price.ToString()), nameof(model.Price));
+                    formData.Add(new StringContent(model.Description), nameof(model.Description));
+
+                    // Loop through images and add them as files to the form data
+                    for (int i = 0; i < uploadedFiles.Count; i++)
+                    {
+                        var file = uploadedFiles[i];
+
+                        using (var memoryStream = new MemoryStream())
+                        {
+                            await file.OpenReadStream().CopyToAsync(memoryStream);
+                            var fileBytes = memoryStream.ToArray(); // Get the byte array
+
+                            var fileContent = new ByteArrayContent(fileBytes);
+                            fileContent.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType); // Use the actual content type
+
+                            // Add the image to the form data
+                            formData.Add(fileContent, $"Images[{i}]", file.Name);
+                        }
+                    }
+
+                    var response = await client.PostAsync($"{_baseUrl}api/Seller/add-product", formData);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await GetProducts();
+                        ToggleOverlay(false);
+                    }
+                    else
+                    {
+                        isBusy = false;
+                        errorMessage = await response.Content.ReadAsStringAsync();
+
+                        ShowError(errorMessage);
+                    }
+                }
+            }
+        }
+        catch(Exception ex)
+        {
+            errorMessage = ex.Message;
+            ShowError(errorMessage);
+        }
+        finally
+        {
+            isBusy = false;
+        }
+    }
+
+    private async Task GetProducts()
+    {
+        try
+        {
+            SetBaseUrl();
+
+            var authStateJson = await SecureStorage.GetAsync(AuthenticationState.AuthStoreKey);
+            var authState = JsonConverter.Deserialize<AuthResponseDto>(authStateJson);
+
+            // var model = new GetProductRequest
+            //     {
+            //         SellerId = authState.User.Id
+            //     };
+
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync($"{_baseUrl}api/Seller/get-products?sellerId={authState.User.Id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonResponse = await response.Content.ReadAsStringAsync();
+                    products = Newtonsoft.Json.JsonConvert.DeserializeObject<IEnumerable<ProductsDto>>(jsonResponse);
+                    loading = false;
+                    StateHasChanged();
+                }
+                else
+                {
+                    errorMessage = await response.Content.ReadAsStringAsync();
+                    ShowError(errorMessage);
+                }
+
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+            ShowError(errorMessage);
+        }
+        finally
+        {
+            isBusy = false;
+        }
+    }
+
+    private Task OpenDeleteDialog()
+    {
+        var parameters = new DialogParameters<Dialog>
+        {
+            { x => x.ContentText, "Do you really want to delete these records? This process cannot be undone." },
+            { x => x.ButtonText, "Delete" },
+            { x => x.Color, Color.Error },
+            { x => x.SubmitEvent, EventCallback.Factory.Create(this, DeleteUserAsync) }
+        };
+
+        var options = new DialogOptions() { CloseButton = true, MaxWidth = MaxWidth.ExtraSmall };
+
+        return DialogService.ShowAsync<Dialog>("Delete Product", parameters, options);
+    }
+
+    private async Task DeleteUserAsync()
+    {
+        await Task.Delay(1000);
+        Console.WriteLine("User deleted successfully.");
+    }
+
+    private void ShowError(string message)
+    {
+        Snackbar.Configuration.PositionClass = Defaults.Classes.Position.TopCenter;
+        Snackbar.Configuration.ShowTransitionDuration = 100;
+        Snackbar.Add(message, Severity.Error);
     }
 }
